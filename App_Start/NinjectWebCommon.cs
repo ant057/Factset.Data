@@ -13,6 +13,7 @@ namespace Factset.Data.App_Start
     using System.Web.Http;
     using WebApiContrib.IoC.Ninject;
     using Domain;
+    using Models;
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -67,7 +68,7 @@ namespace Factset.Data.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            //kernel.Bind<IRepository>().To<EntityFrameworkRepository>();
+            //kernel.Bind<IGenericRepository<T>>().To<Repository<T>>();
             kernel.Bind<FactsetEntities>().To<FactsetEntities>();
         }
     }

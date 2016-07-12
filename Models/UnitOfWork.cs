@@ -10,7 +10,7 @@ namespace Factset.Data.Models
     {
         private FactsetEntities context = new FactsetEntities();
         private Repository<ff_basic_v2> companyRespository;
-        private Repository<ff_basic_af_v2> financialRespository;
+        private Repository<ff_basic_af_v2> basicAnnualRespository;
 
         public Repository<ff_basic_v2> CompanyRespository
         {
@@ -29,11 +29,11 @@ namespace Factset.Data.Models
         {
             get
             {
-                if (this.financialRespository == null)
+                if (this.basicAnnualRespository == null)
                 {
-                    this.financialRespository = new Repository<ff_basic_af_v2>(context);
+                    this.basicAnnualRespository = new Repository<ff_basic_af_v2>(context);
                 }
-                return financialRespository;
+                return basicAnnualRespository;
             }
         }
 

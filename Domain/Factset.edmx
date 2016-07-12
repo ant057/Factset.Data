@@ -3296,6 +3296,13 @@
           <Property Name="summary_desc" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="category_code" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="dcs_unit_amounts_map">
+          <Key>
+            <PropertyRef Name="unit_amount_code" />
+          </Key>
+          <Property Name="unit_amount_code" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="unit_amount_desc" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
         <EntityType Name="econ_category_map">
           <Key>
             <PropertyRef Name="category_code" />
@@ -3965,6 +3972,7 @@
           <EntitySet Name="dcs_reporting_period_map" EntityType="Self.dcs_reporting_period_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="dcs_seniority_map" EntityType="Self.dcs_seniority_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="dcs_summary_map" EntityType="Self.dcs_summary_map" Schema="ref_v2" store:Type="Tables" />
+          <EntitySet Name="dcs_unit_amounts_map" EntityType="Self.dcs_unit_amounts_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="econ_category_map" EntityType="Self.econ_category_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="econ_concept_map" EntityType="Self.econ_concept_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="econ_country_inclusion" EntityType="Self.econ_country_inclusion" Schema="ref_v2" store:Type="Tables" />
@@ -7340,6 +7348,13 @@
           <Property Name="summary_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="category_code" Type="Int32" Nullable="false" />
         </EntityType>
+        <EntityType Name="dcs_unit_amounts_map">
+          <Key>
+            <PropertyRef Name="unit_amount_code" />
+          </Key>
+          <Property Name="unit_amount_code" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="unit_amount_desc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
         <EntityType Name="econ_category_map">
           <Key>
             <PropertyRef Name="category_code" />
@@ -8009,6 +8024,7 @@
           <EntitySet Name="dcs_reporting_period_map" EntityType="Self.dcs_reporting_period_map" />
           <EntitySet Name="dcs_seniority_map" EntityType="Self.dcs_seniority_map" />
           <EntitySet Name="dcs_summary_map" EntityType="Self.dcs_summary_map" />
+          <EntitySet Name="dcs_unit_amounts_map" EntityType="Self.dcs_unit_amounts_map" />
           <EntitySet Name="econ_category_map" EntityType="Self.econ_category_map" />
           <EntitySet Name="econ_concept_map" EntityType="Self.econ_concept_map" />
           <EntitySet Name="econ_country_inclusion" EntityType="Self.econ_country_inclusion" />
@@ -11408,6 +11424,14 @@
                 <ScalarProperty Name="summary_code" ColumnName="summary_code" />
                 <ScalarProperty Name="summary_desc" ColumnName="summary_desc" />
                 <ScalarProperty Name="category_code" ColumnName="category_code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dcs_unit_amounts_map">
+            <EntityTypeMapping TypeName="FactsetModel.dcs_unit_amounts_map">
+              <MappingFragment StoreEntitySet="dcs_unit_amounts_map">
+                <ScalarProperty Name="unit_amount_code" ColumnName="unit_amount_code" />
+                <ScalarProperty Name="unit_amount_desc" ColumnName="unit_amount_desc" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

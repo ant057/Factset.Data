@@ -6,6 +6,7 @@ using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using System.Net.Http.Formatting;
+using System.Web.Http.Cors;
 
 namespace Factset.Data
 {
@@ -27,8 +28,12 @@ namespace Factset.Data
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            var jsonFotmatter = config.Formatters.OfType<JsonMediaTypeFormatter>().FirstOrDefault();
-            jsonFotmatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().FirstOrDefault();
+            jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            //Support CORS
+            var attr = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(attr);
         }
     }
 }

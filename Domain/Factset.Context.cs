@@ -88,6 +88,7 @@ namespace Factset.Data.Domain
         public virtual DbSet<dcs_reporting_period_map> dcs_reporting_period_map { get; set; }
         public virtual DbSet<dcs_seniority_map> dcs_seniority_map { get; set; }
         public virtual DbSet<dcs_summary_map> dcs_summary_map { get; set; }
+        public virtual DbSet<dcs_unit_amounts_map> dcs_unit_amounts_map { get; set; }
         public virtual DbSet<econ_category_map> econ_category_map { get; set; }
         public virtual DbSet<econ_concept_map> econ_concept_map { get; set; }
         public virtual DbSet<econ_country_inclusion> econ_country_inclusion { get; set; }

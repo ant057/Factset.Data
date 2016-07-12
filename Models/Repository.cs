@@ -15,8 +15,8 @@ namespace Factset.Data.Models
 
         public Repository(FactsetEntities db)
         {
-            this._db = db;
-            this._table = _db.Set<T>();
+            _db = db;
+            _table = _db.Set<T>();
         }
 
         public IEnumerable<T> Query(Expression<Func<T, bool>> filter = null)
