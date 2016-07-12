@@ -1,0 +1,65 @@
+﻿using Factset.Data.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Factset.Data.Models
+{
+    public class UnitOfWork : IDisposable
+    {
+        private FactsetEntities context = new FactsetEntities();
+        private Repository<ff_basic_v2> companyRespository;
+        private Repository<ff_basic_af_v2> financialRespository;
+
+        public Repository<ff_basic_v2> CompanyRespository
+        {
+            get
+            {
+                if (this.companyRespository == null)
+                {
+                    this.companyRespository = new Repository<ff_basic_v2>(context);
+                }
+                return companyRespository;
+            }
+        }
+
+        //TODO: financial factory?
+        public Repository<ff_basic_af_v2> FinancialRepository
+        {
+            get
+            {
+                if (this.financialRespository == null)
+                {
+                    this.financialRespository = new Repository<ff_basic_af_v2>(context);
+                }
+                return financialRespository;
+            }
+        }
+
+        public void Save()
+        {
+            context.SaveChanges();
+        }
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    context.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+    }
+}

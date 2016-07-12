@@ -49,9 +49,22 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.WebApi, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.WebApi.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -110,6 +123,14 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebApiContrib.IoC.Ninject, Version=0.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiContrib.IoC.Ninject.0.9.3.0\lib\net40\WebApiContrib.IoC.Ninject.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -174,23 +195,475 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Domain\affiliate_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\asset_class_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\audit_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ce_event_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ce_fiscal_period_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ce_market_time_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\cic_classification_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\country_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_category_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_coupon_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_debt_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_fiscal_year_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_reporting_period_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_seniority_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\dcs_summary_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_category_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_concept_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_country_inclusion.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_event_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_frequency_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_importance_ind_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_indicator_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_source_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_subcategory_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\econ_unit_amounts_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\entity_profile_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\entity_relation_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\entity_status_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\entity_sub_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\entity_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Factset.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factset.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Factset.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\Factset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factset.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\factset_industry_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\factset_sector_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\FDS_COMMAND_HISTORY.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\FDS_DATA_SEQUENCES.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\FDS_FILE_HISTORY.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\FDS_SCHEMA_SEQUENCES.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\FDS_ZIP_HISTORY.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fe_actualflag_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fe_cmtsubid_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fe_item.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fe_item_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fe_revisionflag_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_accounting_standard_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_der_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_der_ltm_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_der_qf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_der_r_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_der_saf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_ltm_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_qf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_r_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_advanced_saf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_auditor_opinion_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_balance_model.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_balance_model_ind.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_balance_model_rpt_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_der_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_der_ltm_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_der_qf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_der_r_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_der_saf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_ltm_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_qf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_r_af_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_saf_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_basic_v2.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_financial_stmt_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_gen_ind_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_metadata.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_security.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_segbus_af.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_segreg_af.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_stitch_af.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_stitch_ltm.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_stitch_qf.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ff_stitch_saf.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fp_div_ngflag_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fp_div_tax_marker_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fp_div_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fp_sec_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fref_security_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fref_sec_exchange_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fund_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fx_rates_hist.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\fx_rates_usd.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\generic_id_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_address.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_entity.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_entity_sector.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_people.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_security_cusip.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_security_isin.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_security_sedol.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_security_ticker_exchange.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\h_security_ticker_region.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\insider_tran_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\invt_obj_asset_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\invt_obj_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\invt_obj_specialization_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\iso_currency_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\issue_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\list_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_acq_purpose_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_closing_status_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_company_role_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_deal_attitude_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_deal_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_profession_role_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_profession_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ma_term_change_types_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\metro_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\mic_exchange_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\nace_classification_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\naics6_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\pe_event_id_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\pe_fund_status_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\pe_fund_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\pe_instrument_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\pe_security_categories_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\pe_transaction_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ppl_asset_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ppl_board_committee_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ppl_bus_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ppl_job_function_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ppl_region_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ppl_special_area_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\region_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\relationship_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\resolution_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\shrk_advisor_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\shrk_amendment_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\shrk_pill_status_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\shrk_pill_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\shrk_pill_version_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\shrk_source_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\sic_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\source_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\state_province_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\unit_amount_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IGenericRepository.cs" />
+    <Compile Include="Models\Repository.cs" />
+    <Compile Include="Models\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Domain\Factset.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Factset.edmx</DependentUpon>
+      <LastGenOutput>Factset.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Domain\Factset.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Factset.edmx</DependentUpon>
+      <LastGenOutput>Factset.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -206,7 +679,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <EntityDeploy Include="Domain\Factset.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Factset.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Domain\Factset.edmx.diagram">
+      <DependentUpon>Factset.edmx</DependentUpon>
+    </Content>
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
