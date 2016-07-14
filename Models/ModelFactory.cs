@@ -21,5 +21,14 @@ namespace Factset.Data.Models
                 MarketValueCurrent = company.ff_mkt_val_curr
             };
         }
+
+        public PagedCompanyList Create(IEnumerable<CompanyList> companyList)
+        {
+            return new PagedCompanyList()
+            {
+                Count = companyList.Count(),
+                Data = companyList
+            };
+        }
     }
 }

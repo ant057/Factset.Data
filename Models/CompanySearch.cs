@@ -12,6 +12,7 @@ namespace Factset.Data.Models
         public Sector Sector { get; set; }
         public SIC SIC { get; set; }
         public EntityType EntityType { get; set; }
+        public Universe Universe { get; set; }
     }
 
     public class CompanyList
@@ -36,47 +37,53 @@ namespace Factset.Data.Models
         public EntityType EntityType { get; set; }
     }
 
+    public class PagedCompanyList
+    {
+        public IEnumerable<CompanyList> Data { get; set; }
+        public int Count { get; set; }
+    }
+
     public class Universe
     {
-        public bool universe_am { get; set; }
-        public bool universe_eu { get; set; }
-        public bool universe_ap { get; set; }
+        public bool AmericaUniverse { get; set; }
+        public bool EuropeUniverse { get; set; }
+        public bool AsiaPacificUniverse { get; set; }
     }
 
     public class Country
     {
-        public string country_desc { get; set; }
-        public string iso_currency { get; set; }
-        public Region region { get; set; }
+        public string CountryDescription { get; set; }
+        public string ISOCurrency { get; set; }
+        public Region Region { get; set; }
     }
 
     public class Region
     {
-        public char region_code { get; set; }
-        public string region_desc { get; set; }
+        public char RegionCode { get; set; }
+        public string RegionDescription { get; set; }
     }
 
     public class Industry
     {
-        public string factset_industry_code { get; set; }
-        public string factset_industry_desc { get; set; }
+        public string IndustryCode { get; set; }
+        public string IndustryDescription { get; set; }
     }
 
     public class Sector
     {
-        public string factset_sector_code { get; set; }
-        public string factset_sector_desc { get; set; }
+        public string SectorCode { get; set; }
+        public string SectorDescription { get; set; }
     }
 
     public class SIC
     {
-        public string sic_code { get; set; }
-        public string sic_desc { get; set; }
+        public string SICCode { get; set; }
+        public string SICDescription { get; set; }
     }
 
     public class EntityType
     {
-        public string entity_type_code { get; set; }
-        public string entity_type_desc { get; set; }
+        public string EntityTypeCode { get; set; }
+        public string EntityTypeDescription { get; set; }
     }
 }

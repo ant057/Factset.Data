@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace Factset.Data.Controllers
 {
+    [RoutePrefix("api/CompanySearch")]
     public class CompanySearchController : ApiController
     {
         private UnitOfWork _unitOfWork = new UnitOfWork();
@@ -19,24 +20,24 @@ namespace Factset.Data.Controllers
             _modelFactory = new ModelFactory();
         }
 
-        //api/CompanySearch/SearchCompanies
-        [Route("api/CompanySearch/SearchCompanies")]
+        //api/CompanySearch/GetAllCompaniesPaged/1/50
+        [Route("GetAllCompaniesPaged/{pageIndex:int}/{pageSize:int}")]
         [HttpGet]
-        public IEnumerable<CompanyList> SearchCompanies()
+        public PagedCompanyList GetAllCompaniesPaged(int pageIndex = 1, int pageSize = 200)
         {
             var results = _unitOfWork.CompanyRespository.GetAll()
                 .OrderBy(c => c.ff_co_name)
-                .Take(100)
+                .Skip((pageIndex - 1) * pageSize).Take(pageSize)
                 .ToList()
                 .Select(c => _modelFactory.Create(c));
 
-            return results;
+            return _modelFactory.Create(results);
         }
 
-        //api/CompanySearch/GetAll
-        [Route("api/CompanySearch/GetAll")]
+        //api/CompanySearch/GetAllCompanies
+        [Route("GetAllCompanies")]
         [HttpGet]
-        public IEnumerable<CompanyList> GetAll()
+        public IEnumerable<CompanyList> GetAllCompanies()
         {
             var results = _unitOfWork.CompanyRespository.GetAll()
                 .OrderBy(c => c.ff_co_name)
