@@ -7,11 +7,11 @@ namespace Factset.Data.Models
 {
     public class CompanySearch
     {
-        public Country Country { get; set; }
-        public Industry Industry { get; set; }
-        public Sector Sector { get; set; }
-        public SIC SIC { get; set; }
-        public EntityType EntityType { get; set; }
+        public IEnumerable<Country> Countries { get; set; }
+        public IEnumerable<Industry> Industries { get; set; }
+        public IEnumerable<Sector> Sectors { get; set; }
+        public IEnumerable<SIC> SICs { get; set; }
+        public IEnumerable<EntityType> EntityTypes { get; set; }
         public Universe Universe { get; set; }
     }
 
@@ -52,6 +52,7 @@ namespace Factset.Data.Models
 
     public class Country
     {
+        public string ISOCountry { get; set; }
         public string CountryDescription { get; set; }
         public string ISOCurrency { get; set; }
         public Region Region { get; set; }
@@ -59,7 +60,7 @@ namespace Factset.Data.Models
 
     public class Region
     {
-        public char RegionCode { get; set; }
+        public string RegionCode { get; set; }
         public string RegionDescription { get; set; }
     }
 
