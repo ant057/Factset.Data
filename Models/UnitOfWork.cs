@@ -12,6 +12,7 @@ namespace Factset.Data.Models
         private Repository<ff_basic_v2> companyRespository;
         private Repository<ff_basic_af_v2> basicAnnualRespository;
         private CompanySearchRepository companySearchRepository;
+        private FinancialRepository financialRepository;
 
         public Repository<ff_basic_v2> CompanyRespository
         {
@@ -25,6 +26,18 @@ namespace Factset.Data.Models
             }
         }
 
+        public FinancialRepository FinancialRepository
+        {
+            get
+            {
+                if (this.financialRepository == null)
+                {
+                    this.financialRepository = new FinancialRepository(context);
+                }
+                return financialRepository;
+            }
+        }
+
         public CompanySearchRepository CompanySearchRepository
         {
             get
@@ -34,19 +47,6 @@ namespace Factset.Data.Models
                     this.companySearchRepository = new CompanySearchRepository(context);
                 }
                 return companySearchRepository;
-            }
-        }
-
-        //TODO: financial factory?
-        public Repository<ff_basic_af_v2> FinancialRepository
-        {
-            get
-            {
-                if (this.basicAnnualRespository == null)
-                {
-                    this.basicAnnualRespository = new Repository<ff_basic_af_v2>(context);
-                }
-                return basicAnnualRespository;
             }
         }
 

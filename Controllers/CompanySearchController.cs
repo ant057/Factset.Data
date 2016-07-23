@@ -78,5 +78,14 @@ namespace Factset.Data.Controllers
 
             return results;
         }
+
+        //api/CompanySearch/GetAllFinancials
+        [Route("GetAllFinancials")]
+        [HttpGet]
+        public object GetAllFinancials()
+        {
+            var results = _unitOfWork.FinancialRepository.GetFinancialStatements("D0MJZ3-S-US");
+            return results;
+        }
     }
 }
