@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace Factset.Data.Controllers
@@ -79,10 +80,10 @@ namespace Factset.Data.Controllers
             return results;
         }
 
-        //api/CompanySearch/GetAllFinancials
-        [Route("GetAllFinancials")]
+        //api/CompanySearch/GetAllCompanyFinancials
+        [Route("GetAllCompanyFinancials")]
         [HttpGet]
-        public object GetAllFinancials()
+        public Financial GetAllCompanyFinancials()
         {
             var results = _unitOfWork.FinancialRepository.GetFinancialStatements("D0MJZ3-S-US");
             return results;

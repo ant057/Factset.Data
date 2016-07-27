@@ -27,7 +27,7 @@ namespace Factset.Data.Models
         public bool UniverseEurope { get; set; }
         public bool UniverseAsiaPacific { get; set; }
 
-        public IEnumerable<Financial> FinancialStatements { get; set; }
+        public Financial FinancialStatements { get; set; }
 
     }
 }

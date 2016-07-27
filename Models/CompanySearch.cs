@@ -35,6 +35,7 @@ namespace Factset.Data.Models
         public Sector Sector { get; set; }
         public SIC SIC { get; set; }
         public EntityType EntityType { get; set; }
+
     }
 
     public class PagedCompanyList
