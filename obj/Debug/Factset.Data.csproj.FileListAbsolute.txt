@@ -164,3 +164,6 @@ C:\Factset.Web\Factset.Data\bin\System.Web.Http.Owin.xml
 C:\Factset.Web\Factset.Data\obj\Debug\Factset.Data.csprojResolveAssemblyReference.cache
 C:\Factset.Web\Factset.Data\obj\Debug\Factset.Data.dll
 C:\Factset.Web\Factset.Data\obj\Debug\Factset.Data.pdb
+C:\Users\acunning\Source\Repos\Factset.Data\bin\Ninject.xml
+C:\Users\acunning\Source\Repos\Factset.Data\bin\Ninject.Web.Common.xml
+C:\Users\acunning\Source\Repos\Factset.Data\bin\Ninject.Web.WebApi.xml

@@ -23,9 +23,17 @@ namespace Factset.Data.Models
         public double? DividendPayoutPerShare { get; set; }
         public double? PriceToEarnings { get; set; }
 
-        public bool UniverseAmerica { get; set; }
-        public bool UniverseEurope { get; set; }
-        public bool UniverseAsiaPacific { get; set; }
+        public short UniverseAmerica { get; set; }
+        public short UniverseEurope { get; set; }
+        public short UniverseAsiaPacific { get; set; }
+
+        public string EntityTypeDescription { get; set; }
+        public string SICCode { get; set; }
+        public string SICDescription { get; set; }
+        public string IndustryDescription { get; set; }
+        public string SectorDescription { get; set; }
+        public string Ticker { get; set; }
+        public string Exchange { get; set; }
 
         public Financial FinancialStatements { get; set; }
 

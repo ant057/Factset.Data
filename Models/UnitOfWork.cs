@@ -12,9 +12,10 @@ namespace Factset.Data.Models
         private Repository<ff_basic_v2> companyRespository;
         private Repository<ff_basic_af_v2> basicAnnualRespository;
         private CompanySearchRepository companySearchRepository;
+        private CompanyRespository companyDetailRepository;
         private FinancialRepository financialRepository;
 
-        public Repository<ff_basic_v2> CompanyRespository
+        public Repository<ff_basic_v2> CompanyRepository
         {
             get
             {
@@ -23,6 +24,18 @@ namespace Factset.Data.Models
                     this.companyRespository = new Repository<ff_basic_v2>(context);
                 }
                 return companyRespository;
+            }
+        }
+
+        public CompanyRespository CompanyDetailRespository
+        {
+            get
+            {
+                if (this.companyDetailRepository == null)
+                {
+                    this.companyDetailRepository = new CompanyRespository(context);
+                }
+                return companyDetailRepository;
             }
         }
 

@@ -59,7 +59,7 @@ namespace Factset.Data.Controllers
         [HttpGet]
         public PagedCompanyList GetAllCompaniesPaged(int pageIndex = 1, int pageSize = 50)
         {
-            var results = _unitOfWork.CompanyRespository.GetAll()
+            var results = _unitOfWork.CompanyRepository.GetAll()
                 .OrderBy(c => c.ff_co_name)
                 .ToList()
                 .Select(c => _modelFactory.CreateCompanyList(c));
@@ -72,7 +72,7 @@ namespace Factset.Data.Controllers
         [HttpGet]
         public IEnumerable<CompanyList> GetAllCompanies()
         {
-            var results = _unitOfWork.CompanyRespository.GetAll()
+            var results = _unitOfWork.CompanyRepository.GetAll()
                 .OrderBy(c => c.ff_co_name)
                 .ToList()
                 .Select(c => _modelFactory.CreateCompanyList(c));
@@ -80,13 +80,5 @@ namespace Factset.Data.Controllers
             return results;
         }
 
-        //api/CompanySearch/GetAllCompanyFinancials
-        [Route("GetAllCompanyFinancials")]
-        [HttpGet]
-        public Financial GetAllCompanyFinancials()
-        {
-            var results = _unitOfWork.FinancialRepository.GetFinancialStatements("D0MJZ3-S-US");
-            return results;
-        }
     }
 }
