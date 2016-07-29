@@ -63,7 +63,7 @@ namespace Factset.Data.Models
                           && BasicAnnual.date == BasicAnnualDerived.date
                           && BasicAnnual.date == AdvancedAnnual.date
                           && BasicAnnual.date == AdvancedAnnualDerived.date
-                          && BasicAnnual.date >= DbFunctions.AddYears(DateTime.Now, -5)
+                          && BasicAnnual.date >= DbFunctions.AddYears(DateTime.Now, -3)
                           select new { BasicAnnual, BasicAnnualDerived, AdvancedAnnual, AdvancedAnnualDerived };
                           
             //var resultsProps = results.GetType().GetProperties();
@@ -136,6 +136,7 @@ namespace Factset.Data.Models
                             join balancemodel in _bal_mod on balancemodelrptmap.report_code equals balancemodel.report_code
                             join balancemodelind in _bal_mod_ind on balancemodel.field_name equals balancemodelind.field_name
                             where basic.fs_perm_sec_id == permSecurityId
+                            orderby balancemodel.display_order
                             select new BalanceModel()
                             {
                                 ReportCode = balancemodel.report_code,
