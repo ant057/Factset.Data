@@ -30,5 +30,13 @@ namespace Factset.Data.Controllers
             results.FinancialStatements = financial;
             return results;
         }
+
+        [Route("GetCompanyFinancials/{permSecurityId}")]
+        [HttpGet]
+        public Financial GetCompanyFinancials(string permSecurityId)
+        {
+            var financial = _unitOfWork.FinancialRepository.GetFinancialStatements(permSecurityId);
+            return financial;
+        }
     }
 }
