@@ -9,8 +9,16 @@ namespace Factset.Data.Models
     public class Company
     {
         public string PermanentSecurityID { get; set; }
-
         public string EntityId { get; set; }
+
+        public string City { get; set; }
+        public string State { get; set; }
+        public string ZipCode { get; set; }
+        public string Street1 { get; set; }
+        public string Street2 { get; set; }
+        public string Street3 { get; set; }
+        public string Phone { get; set; }
+
         public string CountryISO { get; set; }
         public decimal? LatestAnnualUpdate { get; set; }
         public string CompanyName { get; set; }

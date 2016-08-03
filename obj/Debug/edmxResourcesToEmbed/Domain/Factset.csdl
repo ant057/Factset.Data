@@ -3291,13 +3291,6 @@
     <Property Name="summary_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="category_code" Type="Int32" Nullable="false" />
   </EntityType>
-  <EntityType Name="dcs_unit_amounts_map">
-    <Key>
-      <PropertyRef Name="unit_amount_code" />
-    </Key>
-    <Property Name="unit_amount_code" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="unit_amount_desc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
   <EntityType Name="econ_category_map">
     <Key>
       <PropertyRef Name="category_code" />
@@ -3967,7 +3960,6 @@
     <EntitySet Name="dcs_reporting_period_map" EntityType="Self.dcs_reporting_period_map" />
     <EntitySet Name="dcs_seniority_map" EntityType="Self.dcs_seniority_map" />
     <EntitySet Name="dcs_summary_map" EntityType="Self.dcs_summary_map" />
-    <EntitySet Name="dcs_unit_amounts_map" EntityType="Self.dcs_unit_amounts_map" />
     <EntitySet Name="econ_category_map" EntityType="Self.econ_category_map" />
     <EntitySet Name="econ_concept_map" EntityType="Self.econ_concept_map" />
     <EntitySet Name="econ_country_inclusion" EntityType="Self.econ_country_inclusion" />
@@ -4046,5 +4038,31 @@
     <EntitySet Name="source_map" EntityType="Self.source_map" />
     <EntitySet Name="state_province_map" EntityType="Self.state_province_map" />
     <EntitySet Name="unit_amount_map" EntityType="Self.unit_amount_map" />
+    <EntitySet Name="ent_entity_address" EntityType="FactsetModel.ent_entity_address" />
   </EntityContainer>
+  <EntityType Name="ent_entity_address">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADDRESS_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FACTSET_ENTITY_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STATE_PROVINCE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_POSTAL_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CITY_STATE_ZIP" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_STREET1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_STREET2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION_STREET3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ISO_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELE_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELE_AREA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELE_FULL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FAX_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FAX_AREA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FAX_FULL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

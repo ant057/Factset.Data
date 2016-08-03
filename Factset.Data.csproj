@@ -256,9 +256,6 @@
     <Compile Include="Domain\dcs_summary_map.cs">
       <DependentUpon>Factset.tt</DependentUpon>
     </Compile>
-    <Compile Include="Domain\dcs_unit_amounts_map.cs">
-      <DependentUpon>Factset.tt</DependentUpon>
-    </Compile>
     <Compile Include="Domain\econ_category_map.cs">
       <DependentUpon>Factset.tt</DependentUpon>
     </Compile>
@@ -302,6 +299,9 @@
       <DependentUpon>Factset.tt</DependentUpon>
     </Compile>
     <Compile Include="Domain\entity_type_map.cs">
+      <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ent_entity_address.cs">
       <DependentUpon>Factset.tt</DependentUpon>
     </Compile>
     <Compile Include="Domain\Factset.Context.cs">

@@ -136,7 +136,7 @@ namespace Factset.Data.Models
 
                             if (itemValue != null)
                             {
-                                balanceModelItem.Value = itemValue.ToString();
+                                balanceModelItem.Value = float.Parse(itemValue.ToString());
                             }
                         }
                     }
@@ -200,7 +200,7 @@ namespace Factset.Data.Models
 
                             if (itemValue != null)
                             {
-                                balanceModelItem.Value = itemValue.ToString();
+                                balanceModelItem.Value = float.Parse(itemValue.ToString());
                             }
                         }
                     }
@@ -264,7 +264,7 @@ namespace Factset.Data.Models
 
                             if (itemValue != null)
                             {
-                                balanceModelItem.Value = itemValue.ToString();
+                                balanceModelItem.Value = float.Parse(itemValue.ToString());
                             }
                         }
                     }
@@ -328,7 +328,7 @@ namespace Factset.Data.Models
 
                             if (itemValue != null)
                             {
-                                balanceModelItem.Value = itemValue.ToString();
+                                balanceModelItem.Value = float.Parse(itemValue.ToString());
                             }
                         }
                     }

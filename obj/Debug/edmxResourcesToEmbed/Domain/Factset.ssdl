@@ -1,5 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="FactsetModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ent_entity_address">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADDRESS_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FACTSET_ENTITY_ID" Type="varchar" MaxLength="50" />
+    <Property Name="LOCATION_CITY" Type="varchar" MaxLength="50" />
+    <Property Name="STATE_PROVINCE" Type="varchar" MaxLength="50" />
+    <Property Name="LOCATION_POSTAL_CODE" Type="varchar" MaxLength="50" />
+    <Property Name="CITY_STATE_ZIP" Type="varchar" MaxLength="4000" />
+    <Property Name="LOCATION_STREET1" Type="varchar" MaxLength="50" />
+    <Property Name="LOCATION_STREET2" Type="varchar" MaxLength="50" />
+    <Property Name="LOCATION_STREET3" Type="varchar" MaxLength="50" />
+    <Property Name="ISO_COUNTRY" Type="varchar" MaxLength="50" />
+    <Property Name="TELE_COUNTRY" Type="varchar" MaxLength="50" />
+    <Property Name="TELE_AREA" Type="varchar" MaxLength="50" />
+    <Property Name="TELE" Type="varchar" MaxLength="50" />
+    <Property Name="TELE_FULL" Type="varchar" MaxLength="50" />
+    <Property Name="FAX_COUNTRY" Type="varchar" MaxLength="50" />
+    <Property Name="FAX_AREA" Type="varchar" MaxLength="50" />
+    <Property Name="FAX" Type="varchar" MaxLength="50" />
+    <Property Name="FAX_FULL" Type="varchar" MaxLength="50" />
+    <Property Name="HQ" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="FDS_COMMAND_HISTORY">
     <Key>
       <PropertyRef Name="id" />
@@ -3291,13 +3316,6 @@
     <Property Name="summary_desc" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="category_code" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="dcs_unit_amounts_map">
-    <Key>
-      <PropertyRef Name="unit_amount_code" />
-    </Key>
-    <Property Name="unit_amount_code" Type="char" MaxLength="1" Nullable="false" />
-    <Property Name="unit_amount_desc" Type="varchar" MaxLength="20" Nullable="false" />
-  </EntityType>
   <EntityType Name="econ_category_map">
     <Key>
       <PropertyRef Name="category_code" />
@@ -3904,6 +3922,7 @@
     <Property Name="unit_amount_desc" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityContainer Name="FactsetModelStoreContainer">
+    <EntitySet Name="ent_entity_address" EntityType="Self.ent_entity_address" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FDS_COMMAND_HISTORY" EntityType="Self.FDS_COMMAND_HISTORY" Schema="fds" store:Type="Tables" />
     <EntitySet Name="FDS_DATA_SEQUENCES" EntityType="Self.FDS_DATA_SEQUENCES" Schema="fds" store:Type="Tables" />
     <EntitySet Name="FDS_FILE_HISTORY" EntityType="Self.FDS_FILE_HISTORY" Schema="fds" store:Type="Tables" />
@@ -3967,7 +3986,6 @@
     <EntitySet Name="dcs_reporting_period_map" EntityType="Self.dcs_reporting_period_map" Schema="ref_v2" store:Type="Tables" />
     <EntitySet Name="dcs_seniority_map" EntityType="Self.dcs_seniority_map" Schema="ref_v2" store:Type="Tables" />
     <EntitySet Name="dcs_summary_map" EntityType="Self.dcs_summary_map" Schema="ref_v2" store:Type="Tables" />
-    <EntitySet Name="dcs_unit_amounts_map" EntityType="Self.dcs_unit_amounts_map" Schema="ref_v2" store:Type="Tables" />
     <EntitySet Name="econ_category_map" EntityType="Self.econ_category_map" Schema="ref_v2" store:Type="Tables" />
     <EntitySet Name="econ_concept_map" EntityType="Self.econ_concept_map" Schema="ref_v2" store:Type="Tables" />
     <EntitySet Name="econ_country_inclusion" EntityType="Self.econ_country_inclusion" Schema="ref_v2" store:Type="Tables" />

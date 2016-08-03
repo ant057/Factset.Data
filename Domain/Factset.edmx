@@ -4,7 +4,32 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="FactsetModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="FactsetModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ent_entity_address">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADDRESS_ID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FACTSET_ENTITY_ID" Type="varchar" MaxLength="50" />
+          <Property Name="LOCATION_CITY" Type="varchar" MaxLength="50" />
+          <Property Name="STATE_PROVINCE" Type="varchar" MaxLength="50" />
+          <Property Name="LOCATION_POSTAL_CODE" Type="varchar" MaxLength="50" />
+          <Property Name="CITY_STATE_ZIP" Type="varchar" MaxLength="4000" />
+          <Property Name="LOCATION_STREET1" Type="varchar" MaxLength="50" />
+          <Property Name="LOCATION_STREET2" Type="varchar" MaxLength="50" />
+          <Property Name="LOCATION_STREET3" Type="varchar" MaxLength="50" />
+          <Property Name="ISO_COUNTRY" Type="varchar" MaxLength="50" />
+          <Property Name="TELE_COUNTRY" Type="varchar" MaxLength="50" />
+          <Property Name="TELE_AREA" Type="varchar" MaxLength="50" />
+          <Property Name="TELE" Type="varchar" MaxLength="50" />
+          <Property Name="TELE_FULL" Type="varchar" MaxLength="50" />
+          <Property Name="FAX_COUNTRY" Type="varchar" MaxLength="50" />
+          <Property Name="FAX_AREA" Type="varchar" MaxLength="50" />
+          <Property Name="FAX" Type="varchar" MaxLength="50" />
+          <Property Name="FAX_FULL" Type="varchar" MaxLength="50" />
+          <Property Name="HQ" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="FDS_COMMAND_HISTORY">
           <Key>
             <PropertyRef Name="id" />
@@ -3296,13 +3321,6 @@
           <Property Name="summary_desc" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="category_code" Type="int" Nullable="false" />
         </EntityType>
-        <EntityType Name="dcs_unit_amounts_map">
-          <Key>
-            <PropertyRef Name="unit_amount_code" />
-          </Key>
-          <Property Name="unit_amount_code" Type="char" MaxLength="1" Nullable="false" />
-          <Property Name="unit_amount_desc" Type="varchar" MaxLength="20" Nullable="false" />
-        </EntityType>
         <EntityType Name="econ_category_map">
           <Key>
             <PropertyRef Name="category_code" />
@@ -3909,6 +3927,7 @@
           <Property Name="unit_amount_desc" Type="varchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <EntityContainer Name="FactsetModelStoreContainer">
+          <EntitySet Name="ent_entity_address" EntityType="Self.ent_entity_address" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FDS_COMMAND_HISTORY" EntityType="Self.FDS_COMMAND_HISTORY" Schema="fds" store:Type="Tables" />
           <EntitySet Name="FDS_DATA_SEQUENCES" EntityType="Self.FDS_DATA_SEQUENCES" Schema="fds" store:Type="Tables" />
           <EntitySet Name="FDS_FILE_HISTORY" EntityType="Self.FDS_FILE_HISTORY" Schema="fds" store:Type="Tables" />
@@ -3972,7 +3991,6 @@
           <EntitySet Name="dcs_reporting_period_map" EntityType="Self.dcs_reporting_period_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="dcs_seniority_map" EntityType="Self.dcs_seniority_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="dcs_summary_map" EntityType="Self.dcs_summary_map" Schema="ref_v2" store:Type="Tables" />
-          <EntitySet Name="dcs_unit_amounts_map" EntityType="Self.dcs_unit_amounts_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="econ_category_map" EntityType="Self.econ_category_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="econ_concept_map" EntityType="Self.econ_concept_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="econ_country_inclusion" EntityType="Self.econ_country_inclusion" Schema="ref_v2" store:Type="Tables" />
@@ -4052,8 +4070,7 @@
           <EntitySet Name="state_province_map" EntityType="Self.state_province_map" Schema="ref_v2" store:Type="Tables" />
           <EntitySet Name="unit_amount_map" EntityType="Self.unit_amount_map" Schema="ref_v2" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FactsetModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -7348,13 +7365,6 @@
           <Property Name="summary_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="category_code" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityType Name="dcs_unit_amounts_map">
-          <Key>
-            <PropertyRef Name="unit_amount_code" />
-          </Key>
-          <Property Name="unit_amount_code" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="unit_amount_desc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
         <EntityType Name="econ_category_map">
           <Key>
             <PropertyRef Name="category_code" />
@@ -8024,7 +8034,6 @@
           <EntitySet Name="dcs_reporting_period_map" EntityType="Self.dcs_reporting_period_map" />
           <EntitySet Name="dcs_seniority_map" EntityType="Self.dcs_seniority_map" />
           <EntitySet Name="dcs_summary_map" EntityType="Self.dcs_summary_map" />
-          <EntitySet Name="dcs_unit_amounts_map" EntityType="Self.dcs_unit_amounts_map" />
           <EntitySet Name="econ_category_map" EntityType="Self.econ_category_map" />
           <EntitySet Name="econ_concept_map" EntityType="Self.econ_concept_map" />
           <EntitySet Name="econ_country_inclusion" EntityType="Self.econ_country_inclusion" />
@@ -8103,7 +8112,33 @@
           <EntitySet Name="source_map" EntityType="Self.source_map" />
           <EntitySet Name="state_province_map" EntityType="Self.state_province_map" />
           <EntitySet Name="unit_amount_map" EntityType="Self.unit_amount_map" />
+          <EntitySet Name="ent_entity_address" EntityType="FactsetModel.ent_entity_address" />
         </EntityContainer>
+        <EntityType Name="ent_entity_address">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADDRESS_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FACTSET_ENTITY_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LOCATION_CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATE_PROVINCE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LOCATION_POSTAL_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CITY_STATE_ZIP" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="LOCATION_STREET1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LOCATION_STREET2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LOCATION_STREET3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ISO_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TELE_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TELE_AREA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TELE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TELE_FULL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FAX_COUNTRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FAX_AREA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FAX_FULL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -11427,14 +11462,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="dcs_unit_amounts_map">
-            <EntityTypeMapping TypeName="FactsetModel.dcs_unit_amounts_map">
-              <MappingFragment StoreEntitySet="dcs_unit_amounts_map">
-                <ScalarProperty Name="unit_amount_code" ColumnName="unit_amount_code" />
-                <ScalarProperty Name="unit_amount_desc" ColumnName="unit_amount_desc" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="econ_category_map">
             <EntityTypeMapping TypeName="FactsetModel.econ_category_map">
               <MappingFragment StoreEntitySet="econ_category_map">
@@ -12110,6 +12137,32 @@
               <MappingFragment StoreEntitySet="unit_amount_map">
                 <ScalarProperty Name="unit_amount_code" ColumnName="unit_amount_code" />
                 <ScalarProperty Name="unit_amount_desc" ColumnName="unit_amount_desc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ent_entity_address">
+            <EntityTypeMapping TypeName="FactsetModel.ent_entity_address">
+              <MappingFragment StoreEntitySet="ent_entity_address">
+                <ScalarProperty Name="HQ" ColumnName="HQ" />
+                <ScalarProperty Name="FAX_FULL" ColumnName="FAX_FULL" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="FAX_AREA" ColumnName="FAX_AREA" />
+                <ScalarProperty Name="FAX_COUNTRY" ColumnName="FAX_COUNTRY" />
+                <ScalarProperty Name="TELE_FULL" ColumnName="TELE_FULL" />
+                <ScalarProperty Name="TELE" ColumnName="TELE" />
+                <ScalarProperty Name="TELE_AREA" ColumnName="TELE_AREA" />
+                <ScalarProperty Name="TELE_COUNTRY" ColumnName="TELE_COUNTRY" />
+                <ScalarProperty Name="ISO_COUNTRY" ColumnName="ISO_COUNTRY" />
+                <ScalarProperty Name="LOCATION_STREET3" ColumnName="LOCATION_STREET3" />
+                <ScalarProperty Name="LOCATION_STREET2" ColumnName="LOCATION_STREET2" />
+                <ScalarProperty Name="LOCATION_STREET1" ColumnName="LOCATION_STREET1" />
+                <ScalarProperty Name="CITY_STATE_ZIP" ColumnName="CITY_STATE_ZIP" />
+                <ScalarProperty Name="LOCATION_POSTAL_CODE" ColumnName="LOCATION_POSTAL_CODE" />
+                <ScalarProperty Name="STATE_PROVINCE" ColumnName="STATE_PROVINCE" />
+                <ScalarProperty Name="LOCATION_CITY" ColumnName="LOCATION_CITY" />
+                <ScalarProperty Name="FACTSET_ENTITY_ID" ColumnName="FACTSET_ENTITY_ID" />
+                <ScalarProperty Name="ADDRESS_ID" ColumnName="ADDRESS_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

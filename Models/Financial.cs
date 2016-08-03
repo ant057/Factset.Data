@@ -35,7 +35,7 @@ namespace Factset.Data.Models
         public short LTM { get; set; }
         public short SemiAnnual { get; set; }
 
-        public string Value { get; set; }
+        public float Value { get; set; }
 
     }
 }

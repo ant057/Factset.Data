@@ -3318,14 +3318,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="dcs_unit_amounts_map">
-      <EntityTypeMapping TypeName="FactsetModel.dcs_unit_amounts_map">
-        <MappingFragment StoreEntitySet="dcs_unit_amounts_map">
-          <ScalarProperty Name="unit_amount_code" ColumnName="unit_amount_code" />
-          <ScalarProperty Name="unit_amount_desc" ColumnName="unit_amount_desc" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="econ_category_map">
       <EntityTypeMapping TypeName="FactsetModel.econ_category_map">
         <MappingFragment StoreEntitySet="econ_category_map">
@@ -4001,6 +3993,32 @@
         <MappingFragment StoreEntitySet="unit_amount_map">
           <ScalarProperty Name="unit_amount_code" ColumnName="unit_amount_code" />
           <ScalarProperty Name="unit_amount_desc" ColumnName="unit_amount_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ent_entity_address">
+      <EntityTypeMapping TypeName="FactsetModel.ent_entity_address">
+        <MappingFragment StoreEntitySet="ent_entity_address">
+          <ScalarProperty Name="HQ" ColumnName="HQ" />
+          <ScalarProperty Name="FAX_FULL" ColumnName="FAX_FULL" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="FAX_AREA" ColumnName="FAX_AREA" />
+          <ScalarProperty Name="FAX_COUNTRY" ColumnName="FAX_COUNTRY" />
+          <ScalarProperty Name="TELE_FULL" ColumnName="TELE_FULL" />
+          <ScalarProperty Name="TELE" ColumnName="TELE" />
+          <ScalarProperty Name="TELE_AREA" ColumnName="TELE_AREA" />
+          <ScalarProperty Name="TELE_COUNTRY" ColumnName="TELE_COUNTRY" />
+          <ScalarProperty Name="ISO_COUNTRY" ColumnName="ISO_COUNTRY" />
+          <ScalarProperty Name="LOCATION_STREET3" ColumnName="LOCATION_STREET3" />
+          <ScalarProperty Name="LOCATION_STREET2" ColumnName="LOCATION_STREET2" />
+          <ScalarProperty Name="LOCATION_STREET1" ColumnName="LOCATION_STREET1" />
+          <ScalarProperty Name="CITY_STATE_ZIP" ColumnName="CITY_STATE_ZIP" />
+          <ScalarProperty Name="LOCATION_POSTAL_CODE" ColumnName="LOCATION_POSTAL_CODE" />
+          <ScalarProperty Name="STATE_PROVINCE" ColumnName="STATE_PROVINCE" />
+          <ScalarProperty Name="LOCATION_CITY" ColumnName="LOCATION_CITY" />
+          <ScalarProperty Name="FACTSET_ENTITY_ID" ColumnName="FACTSET_ENTITY_ID" />
+          <ScalarProperty Name="ADDRESS_ID" ColumnName="ADDRESS_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

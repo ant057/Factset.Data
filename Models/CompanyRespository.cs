@@ -25,6 +25,7 @@ namespace Factset.Data.Models
         private DbSet<factset_industry_map> _industry_map = null;
         private DbSet<factset_sector_map> _sector_map = null;
         private DbSet<fref_sec_exchange_map> _exch_map = null;
+        private DbSet<ent_entity_address> _entity_address = null;
 
         public CompanyRespository(FactsetEntities db)
         {
@@ -39,6 +40,7 @@ namespace Factset.Data.Models
             _industry_map = _db.factset_industry_map;
             _sector_map = _db.factset_sector_map;
             _exch_map = _db.fref_sec_exchange_map;
+            _entity_address = db.ent_entity_address;
         }
 
         public Company GetCompany(string permSecurityId)
@@ -53,11 +55,19 @@ namespace Factset.Data.Models
                           join SectorMap in _sector_map on EntitySector.sector_code equals SectorMap.factset_sector_code
                           join TickerExchange in _sec_tick_exch on Basic.fs_perm_sec_id equals TickerExchange.fs_perm_sec_id
                           join ExchangeMap in _exch_map on TickerExchange.ticker_exchange.Substring(TickerExchange.ticker_exchange.IndexOf("-") + 1) equals ExchangeMap.fref_exchange_code
+                          join EntityAddress in _entity_address on Entity.factset_entity_id equals EntityAddress.FACTSET_ENTITY_ID
                           where Basic.fs_perm_sec_id == permSecurityId
                           select new Company()
                           {
                               PermanentSecurityID = Basic.fs_perm_sec_id,
                               EntityId = Basic.factset_entity_id,
+                              City = EntityAddress.LOCATION_CITY,
+                              State = EntityAddress.STATE_PROVINCE,
+                              ZipCode = EntityAddress.LOCATION_POSTAL_CODE,
+                              Street1 = EntityAddress.LOCATION_STREET1,
+                              Street2 = EntityAddress.LOCATION_STREET2,
+                              Street3 = EntityAddress.LOCATION_STREET3,
+                              Phone = EntityAddress.TELE_FULL,
                               CountryISO = Basic.ff_country_iso,
                               LatestAnnualUpdate = Basic.fa_latest_ann_update,
                               CompanyName = Basic.ff_co_name,
