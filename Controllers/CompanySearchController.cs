@@ -80,5 +80,16 @@ namespace Factset.Data.Controllers
             return results;
         }
 
+        //api/CompanySearch/GetAllCompanies
+        [Route("GetAllCompanies")]
+        [HttpPost]
+        public IEnumerable<CompanyList> GetAllCompanies([FromBody] SearchParams param)
+        {
+            var results = _unitOfWork.CompanySearchRepository.GetFilteredCompanies(param)
+                .ToList().AsQueryable();
+
+            return results as IEnumerable<CompanyList>;
+        }
+
     }
 }

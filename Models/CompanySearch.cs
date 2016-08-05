@@ -26,15 +26,24 @@ namespace Factset.Data.Models
         public double? MarketValueCurrent { get; set; }
 
         //search criteria
-        public bool UniverseAmerica { get; set; }
-        public bool UniverseEurope { get; set; }
-        public bool UniverseAsiaPacific { get; set; }
+        public short UniverseAmerica { get; set; }
+        public short UniverseEurope { get; set; }
+        public short UniverseAsiaPacific { get; set; }
 
-        public Country Country { get; set; }
-        public Industry Industry { get; set; }
-        public Sector Sector { get; set; }
-        public SIC SIC { get; set; }
-        public EntityType EntityType { get; set; }
+        public string ISOCountry { get; set; }
+        public string CountryDescription { get; set; }
+
+        public string IndustryCode { get; set; }
+        public string IndustryDescription { get; set; }
+
+        public string SectorCode { get; set; }
+        public string SectorDescription { get; set; }
+
+        public string SICCode { get; set; }
+        public string SICDescription { get; set; }
+
+        public string EntityTypeCode { get; set; }
+        public string EntityTypeDescription { get; set; }
 
     }
 
@@ -88,4 +97,18 @@ namespace Factset.Data.Models
         public string EntityTypeCode { get; set; }
         public string EntityTypeDescription { get; set; }
     }
+
+    public class SearchParams
+    {
+        public EntityType[] EntityTypes { get; set; }
+        public SIC[] SicCodes { get; set; }
+        public Sector[] Sectors { get; set; }
+        public Country[] Countries { get; set; }
+        public Industry[] Industries { get; set; }
+
+        public bool AmericaUniverse { get; set; }
+        public bool EuropeUniverse { get; set; }
+        public bool AsiaPacificUniverse { get; set; }
+    }
+
 }
