@@ -48,13 +48,20 @@ namespace Factset.Data.Models
 
             var results = from Basic in _basic
                           join Entity in _entity on Basic.factset_entity_id equals Entity.factset_entity_id
-                          join EntityTypeMap in _entity_type_map on Entity.entity_type equals EntityTypeMap.entity_type_code
-                          join EntitySector in _entity_sector_map on Entity.factset_entity_id equals EntitySector.factset_entity_id
-                          join SICMap in _sic_map on EntitySector.primary_sic_code equals SICMap.sic_code
-                          join IndustryMap in _industry_map on EntitySector.industry_code equals IndustryMap.factset_industry_code
-                          join SectorMap in _sector_map on EntitySector.sector_code equals SectorMap.factset_sector_code
-                          join TickerExchange in _sec_tick_exch on Basic.fs_perm_sec_id equals TickerExchange.fs_perm_sec_id
-                          join ExchangeMap in _exch_map on TickerExchange.ticker_exchange.Substring(TickerExchange.ticker_exchange.IndexOf("-") + 1) equals ExchangeMap.fref_exchange_code
+                          join EntityTypeMap in _entity_type_map on Entity.entity_type equals EntityTypeMap.entity_type_code into Inners4
+                          from EntityTypeMap2 in Inners4.DefaultIfEmpty()
+                          join EntitySector in _entity_sector_map on Entity.factset_entity_id equals EntitySector.factset_entity_id into Inners5
+                          from EntitySector2 in Inners5.DefaultIfEmpty()
+                          join SICMap in _sic_map on EntitySector2.primary_sic_code equals SICMap.sic_code into Inners6
+                          from SICMap2 in Inners6.DefaultIfEmpty()
+                          join IndustryMap in _industry_map on EntitySector2.industry_code equals IndustryMap.factset_industry_code into Inners7
+                          from IndustryMap2 in Inners7.DefaultIfEmpty()
+                          join SectorMap in _sector_map on EntitySector2.sector_code equals SectorMap.factset_sector_code into Inners8
+                          from SectorMap2 in Inners8.DefaultIfEmpty()
+                          join TickerExchange in _sec_tick_exch on Basic.fs_perm_sec_id equals TickerExchange.fs_perm_sec_id into Inners2
+                          from TickerExchange2 in Inners2.DefaultIfEmpty()
+                          join ExchangeMap in _exch_map on TickerExchange2.ticker_exchange.Substring(TickerExchange2.ticker_exchange.IndexOf("-") + 1) equals ExchangeMap.fref_exchange_code into Inners3
+                          from ExchangeMap2 in Inners3.DefaultIfEmpty()
                           join EntityAddress in _entity_address on Entity.factset_entity_id equals EntityAddress.FACTSET_ENTITY_ID into Inners
                           from EntityAddress2 in Inners.DefaultIfEmpty()
                           where (Basic.fs_perm_sec_id == permSecurityId)
@@ -83,16 +90,16 @@ namespace Factset.Data.Models
                               UniverseAmerica = Basic.universe_am,
                               UniverseAsiaPacific = Basic.universe_ap,
                               UniverseEurope = Basic.universe_eu,
-                              EntityTypeDescription = EntityTypeMap.entity_type_desc,
-                              SICCode = SICMap.sic_code,
-                              SICDescription = SICMap.sic_desc,
-                              IndustryDescription = IndustryMap.factset_industry_desc,
-                              SectorDescription = SectorMap.factset_sector_desc,
-                              Ticker = TickerExchange.ticker_exchange,
-                              Exchange = ExchangeMap.fref_exchange_desc
+                              EntityTypeDescription = EntityTypeMap2.entity_type_desc,
+                              SICCode = SICMap2.sic_code,
+                              SICDescription = SICMap2.sic_desc,
+                              IndustryDescription = IndustryMap2.factset_industry_desc,
+                              SectorDescription = SectorMap2.factset_sector_desc,
+                              Ticker = TickerExchange2.ticker_exchange,
+                              Exchange = ExchangeMap2.fref_exchange_desc
                           };
 
-            return results.DefaultIfEmpty().FirstOrDefault();
+            return results.FirstOrDefault();
         }
     }
 }

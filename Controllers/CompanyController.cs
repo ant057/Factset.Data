@@ -25,9 +25,9 @@ namespace Factset.Data.Controllers
         public Company GetCompany(string permSecurityId)
         {
             var results = _unitOfWork.CompanyDetailRespository.GetCompany(permSecurityId);
-            var financial = _unitOfWork.FinancialRepository.GetFinancialStatements(permSecurityId);
+            //var financial = _unitOfWork.FinancialRepository.GetFinancialStatements(permSecurityId);
 
-            results.FinancialStatements = financial;
+            //results.FinancialStatements = financial;
             return results;
         }
 
