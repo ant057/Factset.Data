@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98cb578693f44e02a66a7a31847cdcc7" Name="Diagram1" ZoomLevel="58">
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_AgencyGroup" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_AgentDetail" Width="1.5" PointX="3" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_ContactDetail" Width="1.5" PointX="18" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_Demography" Width="1.5" PointX="1.5" PointY="51.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_StatusType" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_TitleType" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Account" Width="1.5" PointX="3" PointY="61.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountCommercialCredit" Width="1.5" PointX="5.25" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountGroup" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountStatus" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountWatchList" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountWatchListActionPlan" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountWatchListStatus" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Address" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AddressType" Width="1.5" PointX="13.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Agency" Width="1.5" PointX="0.75" PointY="54.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AgencyBORD" Width="1.5" PointX="15.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AgentType" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BillingType" Width="1.5" PointX="17.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondBillingType" Width="1.5" PointX="6" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondClassCode" Width="1.5" PointX="11.25" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondClose" Width="1.5" PointX="10.5" PointY="55.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondContractInfo" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondContractRatePlan" Width="1.5" PointX="10.5" PointY="51.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondDetail" Width="1.5" PointX="8.25" PointY="55.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondForm" Width="1.5" PointX="16.5" PointY="63.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondFronting" Width="1.5" PointX="10.5" PointY="71" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondFrontingBroker" Width="1.5" PointX="5.25" PointY="44.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondNonRenewal" Width="1.5" PointX="10.5" PointY="76.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_BondNotes" Width="1.5" PointX="16.5" PointY="60" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondNumberAgency" Width="1.5" PointX="3" PointY="47.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondObligee" Width="1.5" PointX="13.5" PointY="71.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondPOA" Width="1.5" PointX="10.5" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondPremiumType" Width="1.5" PointX="6" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondPrincipal" Width="1.5" PointX="16.5" PointY="70.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_BondStatus" Width="1.5" PointX="6" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondSubType" Width="1.5" PointX="6" PointY="73.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_BondTaxFee" Width="1.5" PointX="13.5" PointY="57" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondTerm" Width="1.5" PointX="6" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondTransaction" Width="1.5" PointX="19.5" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondTransactionForeign" Width="1.5" PointX="2.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondTransactionType" Width="1.5" PointX="17.25" PointY="73.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondType" Width="1.5" PointX="6" PointY="48.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BusinessType" Width="1.5" PointX="0.75" PointY="72.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ClassCodeType" Width="1.5" PointX="9" PointY="44.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Collateral" Width="1.5" PointX="5.25" PointY="68.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CollateralType" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialCreditDirection" Width="1.5" PointX="3" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialCreditOutlook" Width="1.5" PointX="3" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialIndemnitor" Width="1.5" PointX="13.5" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialIndemnitorType" Width="1.5" PointX="18.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialIndemnityData" Width="1.5" PointX="11.25" PointY="65.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialIndemnityType" Width="1.5" PointX="9" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialSystemRatingCategory" Width="1.5" PointX="3" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CommercialSystemRatings" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ConstOpsTradeAccount" Width="1.5" PointX="13.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContactType" Width="1.5" PointX="15.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractConstOps" Width="1.5" PointX="13.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractConstOpsExperience" Width="1.5" PointX="16" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_ContractConstOpsTrade" Width="1.5" PointX="19.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractContinuity" Width="1.5" PointX="7.5" PointY="78.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractCredit" Width="1.5" PointX="5.25" PointY="81.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractCreditBankLine" Width="1.5" PointX="7.5" PointY="82.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_ContractCreditCompositDBRating" Width="1.5" PointX="15.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractCreditContinuityType" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractCreditDBRatings" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractCreditGurantorList" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_ContractCreditRateType" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractCreditSecuritylist" Width="1.5" PointX="17.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnitors" Width="1.5" PointX="7.5" PointY="90.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnitorType" Width="1.5" PointX="8.25" PointY="116" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnity" Width="1.5" PointX="5.25" PointY="92.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnityAddlIndemnitor" Width="1.5" PointX="10.5" PointY="92.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnityAgreementType" Width="1.5" PointX="8.25" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnityILOC" Width="1.5" PointX="7.5" PointY="98.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnitySubOrdination" Width="1.5" PointX="10.5" PointY="88.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractIndemnityType" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractModificationType" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractOwnerDetails" Width="1.5" PointX="7.5" PointY="87.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractRateClassCode" Width="1.5" PointX="13.5" PointY="60.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractRateDetails" Width="1.5" PointX="11.25" PointY="60.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractRatePlan" Width="1.5" PointX="13" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_ContractRatePlanDetails" Width="1.5" PointX="13.5" PointY="63.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_ContractRateStep" Width="1.5" PointX="15.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractRateType" Width="1.5" PointX="10.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CoSurety" Width="1.5" PointX="4.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Country" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Endorsement" Width="1.5" PointX="16.5" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAms_EndorsementType" Width="1.5" PointX="14.25" PointY="54.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Exchange" Width="1.5" PointX="21.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Factor_Type_Mst" Width="1.5" PointX="13.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialBalanceSheet" Width="1.5" PointX="7.5" PointY="102" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialBalanceSheetLineItem" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialBusinessType" Width="1.5" PointX="21.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialCashFlow" Width="1.5" PointX="7.5" PointY="109" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialCashFlowLineItem" Width="1.5" PointX="9.75" PointY="109.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialHeader" Width="1.5" PointX="5.25" PointY="105.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialIncomeStatementLineItem" Width="1.5" PointX="7.5" PointY="112.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialLineItemAccount" Width="1.5" PointX="21.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialPeriodType" Width="1.5" PointX="21.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialSectionType" Width="1.5" PointX="10.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Form" Width="1.5" PointX="14.25" PointY="74" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_InClaimStatus" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_InvoiceErrorDetail" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Job" Width="1.5" PointX="7.5" PointY="120.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Location" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Note" Width="1.5" PointX="14.25" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_NoteType" Width="1.5" PointX="12" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Obligee" Width="1.5" PointX="11.25" PointY="96.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_POAAgency" Width="1.5" PointX="3" PointY="78" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Principal" Width="1.5" PointX="0.75" PointY="62.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_PrincipalType" Width="1.5" PointX="13.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_PriorSurety" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_PrivateEquityOwnedList" Width="1.5" PointX="8.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ProgramAuth" Width="1.5" PointX="5.25" PointY="115.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateCalculator" Width="1.5" PointX="10.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateClassCode" Width="1.5" PointX="23.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateDetail" Width="1.5" PointX="23.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateFactor" Width="1.5" PointX="15.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateFactorType" Width="1.5" PointX="17.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Rates_Details" Width="1.5" PointX="0.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Rates_Status" Width="1.5" PointX="9" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateStateType" Width="1.5" PointX="24.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateStructure" Width="1.5" PointX="24.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Region" Width="1.5" PointX="24.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SAAClassCode" Width="1.5" PointX="19.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SelfAudit" Width="1.5" PointX="2.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SelfAuditAnswers" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SelfAuditQuestion" Width="1.5" PointX="4.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SelfAuditType" Width="1.5" PointX="25.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Set_Control_Property_Mst" Width="1.5" PointX="12.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SICCodeIndustryType" Width="1.5" PointX="25.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_StatusReason" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_TaxFee" Width="1.5" PointX="11.25" PointY="39.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_TaxFeeState" Width="1.5" PointX="13.5" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_TaxFeeType" Width="1.5" PointX="9" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_WIP" Width="1.5" PointX="5.25" PointY="121.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_WIPData" Width="1.5" PointX="25.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgGCIS_PolicyBond" Width="1.5" PointX="26.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgPOA_Client" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgPOA_PrintData" Width="1.5" PointX="6.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_AccessType" Width="1.5" PointX="5.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Level" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Module" Width="1.5" PointX="5.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Role" Width="1.5" PointX="5.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_RoleModule" Width="1.5" PointX="8" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_RoleScreen" Width="1.5" PointX="8" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Screen" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_ScreenControls" Width="1.5" PointX="8.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_ScreenModule" Width="1.5" PointX="11" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_SecretQuestion" Width="1.5" PointX="27.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_SystemLock" Width="1.5" PointX="11" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_User" Width="1.5" PointX="8.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_UserLog" Width="1.5" PointX="27.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_UserPasswordHistory" Width="1.5" PointX="27.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_UserRole" Width="1.5" PointX="11" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_UserScreen" Width="1.5" PointX="11" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAgency_Notes" Width="1.5" PointX="3" PointY="81" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.argams_account_backup_20111209" Width="1.5" PointX="27.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Account_fix" Width="1.5" PointX="27.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountTest" Width="1.5" PointX="28.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ARMS_Details" Width="1.5" PointX="28.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ARMS_Limits" Width="1.5" PointX="14.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ARMS_Risk_Char_GRP_MST" Width="1.5" PointX="16.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ARMS_Risks_Sub_MST" Width="1.5" PointX="18.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_BondIssueType" Width="1.5" PointX="20.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_CollateralTransactionType" Width="1.5" PointX="29.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Company_Type_Mst" Width="1.5" PointX="29.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ContractFormType" Width="1.5" PointX="10.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Factor_Details" Width="1.5" PointX="16" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialLineItem" Width="1.5" PointX="13" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_FinancialStatementType" Width="1.5" PointX="29.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_Global_Calc_Values" Width="1.5" PointX="29.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ProducerCSR" Width="1.5" PointX="5.25" PointY="124.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_ProgramAuthHistory" Width="1.5" PointX="29.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RateSnPEquivalent" Width="1.5" PointX="29.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_RatesSnPMoodyRating" Width="1.5" PointX="29.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SICode" Width="1.5" PointX="30.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SnP_Equivalent_Rating_Mst" Width="1.5" PointX="4.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_SnPCalculateValue" Width="1.5" PointX="29.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_USZipList" Width="1.5" PointX="31.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgPOA_Company" Width="1.5" PointX="31.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgPOA_State" Width="1.5" PointX="12.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Permission" Width="1.5" PointX="31.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Temp_AccessType" Width="1.5" PointX="14.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_Temp_Screen" Width="1.5" PointX="31.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgSec_temp_ScreenControls" Width="1.5" PointX="16.75" PointY="31.75" IsExpanded="true" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAgency_Agents_ArgAMS_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondFrontingBroker_ArgAgency_AgentDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAgency_ContactDetail_ArgAMS_ContactType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAgency_Demography" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_Account1" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_Account2" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_Account3" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_BusinessType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Account_ArgAMS_Principal" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountCommercialCredit_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountsFinancialsData_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Collateral_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_CommercialIndemnityData_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractCredit_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnity_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractRateDetails_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ProducerCSR_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ProgramAuth_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_WIP_ArgAMS_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountCommercialCredit_ArgAMS_AccountCommercialCredit" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountCommercialCredit_ArgAMS_CommercialCreditDirection" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountCommercialCredit_ArgAMS_CommercialCreditOutlook" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountCommercialCredit_ArgAMS_CommercialSystemRatingCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__Watch__73D1A121" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__Watch__74C5C55A" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__Watch__75B9E993" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__Watch__76AE0DCC" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAgency__Agenc__07C2BFDE" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondNumberAgency_ArgAMS_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_POAAgency_ArgAMS_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_BondBillingType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondClassCode_ArgAMS_ClassCodeType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_BondClassCode" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractRateClassCode_ArgAMS_BondClassCode" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondClose_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondContractRatePlan_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_BondPremiumType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAms_BondStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_BondSubType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_ArgAMS_BondTerm" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_BondStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondDetail_BondType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondForm_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondFronting_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondNonRenewal_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAms_BondNotes_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondObligee_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondPOA_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondPrincipal_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAms_BondTaxFee_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondTransaction_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Endorsement_ArgAMS_BondDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondForm_ArgAMS_Form" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAms_BondNotes_ArgAMS_Note" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondObligee_ArgAMS_Obligee" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondPrincipal_ArgAMS_Principal" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAms_BondTaxFee_ArgAMS_TaxFee" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_BondTransaction_ArgAMS_BondTransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_CommercialIndemnitor_ArgAMS_CommercialIndemnitor" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_CommercialIndemnitor_ArgAMS_CommercialIndemnityData" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_CommercialIndemnityData_ArgAMS_CommercialIndemnityData" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_CommercialIndemnityData_ArgAMS_CommercialIndemnityData2" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_CommercialIndemnityData_ArgAMS_CommercialIndemnityType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractConstOpsExperience_ArgAms_ContractConstOps" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractContinuity_ArgAMS_ContractContinuity" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractContinuity_ArgAMS_ContractContinuity1" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractContinuity_ArgAMS_ContractCreditContinuityType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractCredit_ArgAMS_ContractCredit" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractCreditBankLine_ArgAMS_ContractCredit" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractOwnerDetails_ArgAMS_ContractCredit" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnitors_ArgAMS_ContractIndemnity" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnityAddlIndemnitor_ArgAMS_ContractIndemnitorType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnityAddlIndemnitor_ArgAMS_ContractIndemnity" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnityILOC_ArgAMS_ContractIndemnity" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnitySubOrdination_ArgAMS_ContractIndemnity" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractIndemnitySubOrdination_ArgAMS_ContractIndemnityAgreementType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractRateClassCode_ArgAMS_ContractRateDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractRateDetails_ArgAMS_Rates_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAms_ContractRatePlanDetails_ArgAMS_ContractRateDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ContractRatePlan_ArgAMS_ContractRateType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAms_ContractRateStep_ArgAMS_ContractRatePlan" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Endorsement_ArgAms_EndorsementType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Fa__Facto__50E5F592" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountsFinacialBalanceSheet_ArgAMS_AccountsFinancialsData" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountFinancialBSLineItemData_ArgAMS_AccountFinancialBSLineItemData" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__State__627A95E8" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountFinancialCFLineItemData_ArgAMS_AccountFinancialCashFlowData" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__State__636EBA21" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_AccountsFinancialsData_ArgAMS_AccountsFinancialsData" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK__ArgAMS_Ac__secti__49AEE81E" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Job_ArgAMS_WIP" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_Note_ArgAMS_NoteType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_ProgramAuth_ArgAMS_ProgramAuth" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_TaxFee_ArgAMS_TaxFeeType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgAMS_TaxFeeState_ArgAMS_TaxFee" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_RoleModule_ArgSec_AccessType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_RoleScreen_ArgSec_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_UserScreen_ArgSec_AccessType" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_RoleModule_ArgSec_Module" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_ScreenModule_ArgSec_Module" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_RoleModule_ArgSec_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_UserRole_ArgSec_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_ScreenModule_ArgSec_Screen" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_UserScreen_ArgSec_Screen" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_SystemLock_ArgSec_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_UserRole_ArgSec_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ArgoSuretyModel.FK_ArgSec_UserScreen_ArgSec_User" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ArgoSuretyModel.ArgAMS_AccountFactsetSecurity" Width="1.5" PointX="19.375" PointY="31.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

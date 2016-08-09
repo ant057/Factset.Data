@@ -1,0 +1,2595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ArgoSuretyModelStoreContainer" CdmEntityContainer="ArgoSuretyEntities">
+    <EntitySetMapping Name="ArgAgency_AgencyGroup">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_AgencyGroup">
+        <MappingFragment StoreEntitySet="ArgAgency_AgencyGroup">
+          <ScalarProperty Name="AgencyGroupID" ColumnName="AgencyGroupID" />
+          <ScalarProperty Name="AgencyGroup" ColumnName="AgencyGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAgency_AgentDetail">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_AgentDetail">
+        <MappingFragment StoreEntitySet="ArgAgency_AgentDetail">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="TitleTypeID" ColumnName="TitleTypeID" />
+          <ScalarProperty Name="AgentTypeID" ColumnName="AgentTypeID" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAgency_ContactDetail">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_ContactDetail">
+        <MappingFragment StoreEntitySet="ArgAgency_ContactDetail">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+          <ScalarProperty Name="ContactDetail" ColumnName="ContactDetail" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAgency_Demography">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_Demography">
+        <MappingFragment StoreEntitySet="ArgAgency_Demography">
+          <ScalarProperty Name="DemographyId" ColumnName="DemographyId" />
+          <ScalarProperty Name="Demography" ColumnName="Demography" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAgency_StatusType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_StatusType">
+        <MappingFragment StoreEntitySet="ArgAgency_StatusType">
+          <ScalarProperty Name="AgencyStatusID" ColumnName="AgencyStatusID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAgency_TitleType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_TitleType">
+        <MappingFragment StoreEntitySet="ArgAgency_TitleType">
+          <ScalarProperty Name="TitleID" ColumnName="TitleID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Account">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Account">
+        <MappingFragment StoreEntitySet="ArgAMS_Account">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UW1ID" ColumnName="UW1ID" />
+          <ScalarProperty Name="UW2ID" ColumnName="UW2ID" />
+          <ScalarProperty Name="UWAId" ColumnName="UWAId" />
+          <ScalarProperty Name="HomeOffice2Id" ColumnName="HomeOffice2Id" />
+          <ScalarProperty Name="HomeOffice1ID" ColumnName="HomeOffice1ID" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="PriorSuretyID" ColumnName="PriorSuretyID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="NoteId" ColumnName="NoteId" />
+          <ScalarProperty Name="Mgmtcontroldt" ColumnName="Mgmtcontroldt" />
+          <ScalarProperty Name="Argoacqdt" ColumnName="Argoacqdt" />
+          <ScalarProperty Name="LastAcctMtg" ColumnName="LastAcctMtg" />
+          <ScalarProperty Name="isQuoted" ColumnName="isQuoted" />
+          <ScalarProperty Name="isProspect" ColumnName="isProspect" />
+          <ScalarProperty Name="isManualAddress" ColumnName="isManualAddress" />
+          <ScalarProperty Name="isLostToCompetitor" ColumnName="isLostToCompetitor" />
+          <ScalarProperty Name="isRIAccept" ColumnName="isRIAccept" />
+          <ScalarProperty Name="RIAcceptNote" ColumnName="RIAcceptNote" />
+          <ScalarProperty Name="isReverseFlow" ColumnName="isReverseFlow" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="isMiddle" ColumnName="isMiddle" />
+          <ScalarProperty Name="isLetterSent" ColumnName="isLetterSent" />
+          <ScalarProperty Name="LetterSentDate" ColumnName="LetterSentDate" />
+          <ScalarProperty Name="LetterDays" ColumnName="LetterDays" />
+          <ScalarProperty Name="AuditDate" ColumnName="AuditDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountCommercialCredit">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountCommercialCredit">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountCommercialCredit">
+          <ScalarProperty Name="AcctRatingID" ColumnName="AcctRatingID" />
+          <ScalarProperty Name="RatingType" ColumnName="RatingType" />
+          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+          <ScalarProperty Name="RatingCategoryID" ColumnName="RatingCategoryID" />
+          <ScalarProperty Name="AsofDate" ColumnName="AsofDate" />
+          <ScalarProperty Name="RatingOutlookID" ColumnName="RatingOutlookID" />
+          <ScalarProperty Name="RatingWatchList" ColumnName="RatingWatchList" />
+          <ScalarProperty Name="RatingDirectionID" ColumnName="RatingDirectionID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountGroup">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountGroup">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountGroup">
+          <ScalarProperty Name="AccountGroupID" ColumnName="AccountGroupID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountStatus">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountStatus">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountStatus">
+          <ScalarProperty Name="AccountStatusID" ColumnName="AccountStatusID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SortIndicator" ColumnName="SortIndicator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountWatchList">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountWatchList">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountWatchList">
+          <ScalarProperty Name="WatchListID" ColumnName="WatchListID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="ReasonAdded" ColumnName="ReasonAdded" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="WatchListStatusId" ColumnName="WatchListStatusId" />
+          <ScalarProperty Name="CrewMemberID" ColumnName="CrewMemberID" />
+          <ScalarProperty Name="AddedById" ColumnName="AddedById" />
+          <ScalarProperty Name="ReasonRemoved" ColumnName="ReasonRemoved" />
+          <ScalarProperty Name="RemovedById" ColumnName="RemovedById" />
+          <ScalarProperty Name="DateRemoved" ColumnName="DateRemoved" />
+          <ScalarProperty Name="ApprovedById" ColumnName="ApprovedById" />
+          <ScalarProperty Name="DateApproved" ColumnName="DateApproved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountWatchListActionPlan">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountWatchListActionPlan">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountWatchListActionPlan">
+          <ScalarProperty Name="ActionPlanID" ColumnName="ActionPlanID" />
+          <ScalarProperty Name="WatchListID" ColumnName="WatchListID" />
+          <ScalarProperty Name="ActionPlan" ColumnName="ActionPlan" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ActionResult" ColumnName="ActionResult" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedUser" ColumnName="ModifiedUser" />
+          <ScalarProperty Name="Outlook" ColumnName="Outlook" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountWatchListStatus">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountWatchListStatus">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountWatchListStatus">
+          <ScalarProperty Name="WatchListStatusId" ColumnName="WatchListStatusId" />
+          <ScalarProperty Name="WatchStatus" ColumnName="WatchStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Address">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Address">
+        <MappingFragment StoreEntitySet="ArgAMS_Address">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+          <ScalarProperty Name="IsMainAddress" ColumnName="IsMainAddress" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AddressType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AddressType">
+        <MappingFragment StoreEntitySet="ArgAMS_AddressType">
+          <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Agency">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Agency">
+        <MappingFragment StoreEntitySet="ArgAMS_Agency">
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="AgencyCode" ColumnName="AgencyCode" />
+          <ScalarProperty Name="LegalName" ColumnName="LegalName" />
+          <ScalarProperty Name="BillingName" ColumnName="BillingName" />
+          <ScalarProperty Name="AgencyGroupID" ColumnName="AgencyGroupID" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="FedTaxID" ColumnName="FedTaxID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="AgencyEmail" ColumnName="AgencyEmail" />
+          <ScalarProperty Name="AgencyProducer" ColumnName="AgencyProducer" />
+          <ScalarProperty Name="AgencyCSR" ColumnName="AgencyCSR" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="sortIndex" ColumnName="sortIndex" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="LicenseName" ColumnName="LicenseName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsSureTec" ColumnName="IsSureTec" />
+          <ScalarProperty Name="DemographyId" ColumnName="DemographyId" />
+          <ScalarProperty Name="ARegionId" ColumnName="ARegionId" />
+          <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
+          <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+          <ScalarProperty Name="TerminationDateSign" ColumnName="TerminationDateSign" />
+          <ScalarProperty Name="ProducerAgreementDate" ColumnName="ProducerAgreementDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AgencyBORD">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AgencyBORD">
+        <MappingFragment StoreEntitySet="ArgAMS_AgencyBORD">
+          <ScalarProperty Name="AgencyBordId" ColumnName="AgencyBordId" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="BordDate" ColumnName="BordDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AgentType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AgentType">
+        <MappingFragment StoreEntitySet="ArgAMS_AgentType">
+          <ScalarProperty Name="AgentTypeID" ColumnName="AgentTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BillingType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BillingType">
+        <MappingFragment StoreEntitySet="ArgAMS_BillingType">
+          <ScalarProperty Name="BillingTypeID" ColumnName="BillingTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondBillingType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondBillingType">
+        <MappingFragment StoreEntitySet="ArgAMS_BondBillingType">
+          <ScalarProperty Name="BillingTypeID" ColumnName="BillingTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondClassCode">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondClassCode">
+        <MappingFragment StoreEntitySet="ArgAMS_BondClassCode">
+          <ScalarProperty Name="ClassCode" ColumnName="ClassCode" />
+          <ScalarProperty Name="BondType" ColumnName="BondType" />
+          <ScalarProperty Name="BondCATEGORY" ColumnName="BondCATEGORY" />
+          <ScalarProperty Name="RISKFACTOR" ColumnName="RISKFACTOR" />
+          <ScalarProperty Name="BONDDESCRIPTION" ColumnName="BONDDESCRIPTION" />
+          <ScalarProperty Name="EXPOSURETYPE" ColumnName="EXPOSURETYPE" />
+          <ScalarProperty Name="BondClassCodeID" ColumnName="BondClassCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondClose">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondClose">
+        <MappingFragment StoreEntitySet="ArgAMS_BondClose">
+          <ScalarProperty Name="BondCloseId" ColumnName="BondCloseId" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="MailCertNumber" ColumnName="MailCertNumber" />
+          <ScalarProperty Name="AttContact" ColumnName="AttContact" />
+          <ScalarProperty Name="CancelEffectiveDate" ColumnName="CancelEffectiveDate" />
+          <ScalarProperty Name="AttorneyInFact" ColumnName="AttorneyInFact" />
+          <ScalarProperty Name="OfficeSent" ColumnName="OfficeSent" />
+          <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+          <ScalarProperty Name="CancelDays" ColumnName="CancelDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondContractInfo">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondContractInfo">
+        <MappingFragment StoreEntitySet="ArgAMS_BondContractInfo">
+          <ScalarProperty Name="ContractID" ColumnName="ContractID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="ContractName" ColumnName="ContractName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ContractEffectiveDate" ColumnName="ContractEffectiveDate" />
+          <ScalarProperty Name="ContractExpirationDate" ColumnName="ContractExpirationDate" />
+          <ScalarProperty Name="WarrantyPeriodMonth" ColumnName="WarrantyPeriodMonth" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="ContractAmount" ColumnName="ContractAmount" />
+          <ScalarProperty Name="PerformanceAmount" ColumnName="PerformanceAmount" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="MonthsSubjectToSurcharge" ColumnName="MonthsSubjectToSurcharge" />
+          <ScalarProperty Name="SurchargePerMonth" ColumnName="SurchargePerMonth" />
+          <ScalarProperty Name="WarrantyExpireDate" ColumnName="WarrantyExpireDate" />
+          <ScalarProperty Name="WarrantyPeriodDays" ColumnName="WarrantyPeriodDays" />
+          <ScalarProperty Name="BondForm" ColumnName="BondForm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondContractRatePlan">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondContractRatePlan">
+        <MappingFragment StoreEntitySet="ArgAMS_BondContractRatePlan">
+          <ScalarProperty Name="BondRateID" ColumnName="BondRateID" />
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="BondAmount" ColumnName="BondAmount" />
+          <ScalarProperty Name="LowerLimit" ColumnName="LowerLimit" />
+          <ScalarProperty Name="UpperLimit" ColumnName="UpperLimit" />
+          <ScalarProperty Name="CommissionPercent" ColumnName="CommissionPercent" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Surcharge" ColumnName="Surcharge" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondDetail">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondDetail">
+        <MappingFragment StoreEntitySet="ArgAMS_BondDetail">
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="POANumber" ColumnName="POANumber" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="PrincipalDBA" ColumnName="PrincipalDBA" />
+          <ScalarProperty Name="ObligeeID" ColumnName="ObligeeID" />
+          <ScalarProperty Name="ClassCode" ColumnName="ClassCode" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="BondAmount" ColumnName="BondAmount" />
+          <ScalarProperty Name="BondTermTypeID" ColumnName="BondTermTypeID" />
+          <ScalarProperty Name="BillingEffectiveDate" ColumnName="BillingEffectiveDate" />
+          <ScalarProperty Name="BillingExpirationDate" ColumnName="BillingExpirationDate" />
+          <ScalarProperty Name="BillingTypeID" ColumnName="BillingTypeID" />
+          <ScalarProperty Name="Cancellable" ColumnName="Cancellable" />
+          <ScalarProperty Name="CancellableDays" ColumnName="CancellableDays" />
+          <ScalarProperty Name="PremiumTypeID" ColumnName="PremiumTypeID" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="Commisionpercent" ColumnName="Commisionpercent" />
+          <ScalarProperty Name="commisinval" ColumnName="commisinval" />
+          <ScalarProperty Name="manualadjust" ColumnName="manualadjust" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="BillingNoteID" ColumnName="BillingNoteID" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="AdjustedRate" ColumnName="AdjustedRate" />
+          <ScalarProperty Name="AdjustedPremium" ColumnName="AdjustedPremium" />
+          <ScalarProperty Name="PremTobeReturned" ColumnName="PremTobeReturned" />
+          <ScalarProperty Name="AttorneyInFact" ColumnName="AttorneyInFact" />
+          <ScalarProperty Name="OldBondNumber" ColumnName="OldBondNumber" />
+          <ScalarProperty Name="BidDate" ColumnName="BidDate" />
+          <ScalarProperty Name="ProducerID" ColumnName="ProducerID" />
+          <ScalarProperty Name="CSRID" ColumnName="CSRID" />
+          <ScalarProperty Name="EndorseAmount" ColumnName="EndorseAmount" />
+          <ScalarProperty Name="CancellationReason" ColumnName="CancellationReason" />
+          <ScalarProperty Name="CancellationDate" ColumnName="CancellationDate" />
+          <ScalarProperty Name="EndorseDate" ColumnName="EndorseDate" />
+          <ScalarProperty Name="SysEndorseAmount" ColumnName="SysEndorseAmount" />
+          <ScalarProperty Name="SysCancellationAmount" ColumnName="SysCancellationAmount" />
+          <ScalarProperty Name="EndorsementReason" ColumnName="EndorsementReason" />
+          <ScalarProperty Name="AgencyChangeReason" ColumnName="AgencyChangeReason" />
+          <ScalarProperty Name="TotalTaxandFee" ColumnName="TotalTaxandFee" />
+          <ScalarProperty Name="RateCategoryType" ColumnName="RateCategoryType" />
+          <ScalarProperty Name="BondTypeID" ColumnName="BondTypeID" />
+          <ScalarProperty Name="TaxFeeDetail" ColumnName="TaxFeeDetail" />
+          <ScalarProperty Name="BondStatusID" ColumnName="BondStatusID" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="IsFederal" ColumnName="IsFederal" />
+          <ScalarProperty Name="UW1" ColumnName="UW1" />
+          <ScalarProperty Name="CancelAdjust" ColumnName="CancelAdjust" />
+          <ScalarProperty Name="SubTypeID" ColumnName="SubTypeID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="BondSuffix" ColumnName="BondSuffix" />
+          <ScalarProperty Name="IsProrateOverride" ColumnName="IsProrateOverride" />
+          <ScalarProperty Name="EndorsedCommission" ColumnName="EndorsedCommission" />
+          <ScalarProperty Name="IsContractAmount" ColumnName="IsContractAmount" />
+          <ScalarProperty Name="CompletionSurcharge" ColumnName="CompletionSurcharge" />
+          <ScalarProperty Name="MaintenanceCharge" ColumnName="MaintenanceCharge" />
+          <ScalarProperty Name="ContractRateID" ColumnName="ContractRateID" />
+          <ScalarProperty Name="BondIssueTypeID" ColumnName="BondIssueTypeID" />
+          <ScalarProperty Name="CertDate" ColumnName="CertDate" />
+          <ScalarProperty Name="CertMailNo" ColumnName="CertMailNo" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="EndorsedTaxfee" ColumnName="EndorsedTaxfee" />
+          <ScalarProperty Name="IsReInsurance" ColumnName="IsReInsurance" />
+          <ScalarProperty Name="IsQuotaShare" ColumnName="IsQuotaShare" />
+          <ScalarProperty Name="IsXOL" ColumnName="IsXOL" />
+          <ScalarProperty Name="IsBulkBill" ColumnName="IsBulkBill" />
+          <ScalarProperty Name="BulkBillStartDate" ColumnName="BulkBillStartDate" />
+          <ScalarProperty Name="BulkBillEndDate" ColumnName="BulkBillEndDate" />
+          <ScalarProperty Name="BulkBillType" ColumnName="BulkBillType" />
+          <ScalarProperty Name="IsInClaim" ColumnName="IsInClaim" />
+          <ScalarProperty Name="ClaimStatusId" ColumnName="ClaimStatusId" />
+          <ScalarProperty Name="PermitNumber" ColumnName="PermitNumber" />
+          <ScalarProperty Name="IsDemandLanguage" ColumnName="IsDemandLanguage" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="ForeignBondNumber" ColumnName="ForeignBondNumber" />
+          <ScalarProperty Name="UWAID" ColumnName="UWAID" />
+          <ScalarProperty Name="RiskState" ColumnName="RiskState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondForm">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondForm">
+        <MappingFragment StoreEntitySet="ArgAMS_BondForm">
+          <ScalarProperty Name="BondFormID" ColumnName="BondFormID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="FormID" ColumnName="FormID" />
+          <ScalarProperty Name="DateExecuted" ColumnName="DateExecuted" />
+          <ScalarProperty Name="DateExecuted1" ColumnName="DateExecuted1" />
+          <ScalarProperty Name="DateExecuted2" ColumnName="DateExecuted2" />
+          <ScalarProperty Name="AttentionTo" ColumnName="AttentionTo" />
+          <ScalarProperty Name="AttorneyInFact" ColumnName="AttorneyInFact" />
+          <ScalarProperty Name="DescriptionNote" ColumnName="DescriptionNote" />
+          <ScalarProperty Name="DescriptionNote1" ColumnName="DescriptionNote1" />
+          <ScalarProperty Name="RiderChangeFrom" ColumnName="RiderChangeFrom" />
+          <ScalarProperty Name="RiderChangeTo" ColumnName="RiderChangeTo" />
+          <ScalarProperty Name="RiderChangeFrom1" ColumnName="RiderChangeFrom1" />
+          <ScalarProperty Name="RiderChangeTo1" ColumnName="RiderChangeTo1" />
+          <ScalarProperty Name="RiderChangeFrom2" ColumnName="RiderChangeFrom2" />
+          <ScalarProperty Name="RiderChangeTo2" ColumnName="RiderChangeTo2" />
+          <ScalarProperty Name="RiderChangeName2" ColumnName="RiderChangeName2" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="FaxEmail" ColumnName="FaxEmail" />
+          <ScalarProperty Name="UWName" ColumnName="UWName" />
+          <ScalarProperty Name="UWEmail" ColumnName="UWEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondFronting">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondFronting">
+        <MappingFragment StoreEntitySet="ArgAMS_BondFronting">
+          <ScalarProperty Name="BondFrontingID" ColumnName="BondFrontingID" />
+          <ScalarProperty Name="FrontingCompanyID" ColumnName="FrontingCompanyID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="FeeAmount" ColumnName="FeeAmount" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="FrontingNote" ColumnName="FrontingNote" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrencyRate" ColumnName="CurrencyRate" />
+          <ScalarProperty Name="CurrencyDate" ColumnName="CurrencyDate" />
+          <ScalarProperty Name="ForeignBondAmount" ColumnName="ForeignBondAmount" />
+          <ScalarProperty Name="ForeignPremium" ColumnName="ForeignPremium" />
+          <ScalarProperty Name="ForeignBondNumber" ColumnName="ForeignBondNumber" />
+          <ScalarProperty Name="ForeignCommision" ColumnName="ForeignCommision" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="RateOverride" ColumnName="RateOverride" />
+          <ScalarProperty Name="ForeignCommission" ColumnName="ForeignCommission" />
+          <ScalarProperty Name="ForeignBrokerCommission" ColumnName="ForeignBrokerCommission" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondFrontingBroker">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondFrontingBroker">
+        <MappingFragment StoreEntitySet="ArgAMS_BondFrontingBroker">
+          <ScalarProperty Name="BondFrontingCompanyID" ColumnName="BondFrontingCompanyID" />
+          <ScalarProperty Name="WritingCompanyID" ColumnName="WritingCompanyID" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondNonRenewal">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondNonRenewal">
+        <MappingFragment StoreEntitySet="ArgAMS_BondNonRenewal">
+          <ScalarProperty Name="BondNonRenewalId" ColumnName="BondNonRenewalId" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="MailCertNumber" ColumnName="MailCertNumber" />
+          <ScalarProperty Name="AttContact" ColumnName="AttContact" />
+          <ScalarProperty Name="CancelEffectiveDate" ColumnName="CancelEffectiveDate" />
+          <ScalarProperty Name="AttorneyInFact" ColumnName="AttorneyInFact" />
+          <ScalarProperty Name="OfficeSent" ColumnName="OfficeSent" />
+          <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_BondNotes">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_BondNotes">
+        <MappingFragment StoreEntitySet="ArgAms_BondNotes">
+          <ScalarProperty Name="BondNoteID" ColumnName="BondNoteID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondNumberAgency">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondNumberAgency">
+        <MappingFragment StoreEntitySet="ArgAMS_BondNumberAgency">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="NoofBond" ColumnName="NoofBond" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="groupId" ColumnName="groupId" />
+          <ScalarProperty Name="vFlag" ColumnName="vFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondObligee">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondObligee">
+        <MappingFragment StoreEntitySet="ArgAMS_BondObligee">
+          <ScalarProperty Name="BondObligeeID" ColumnName="BondObligeeID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="ObligeeID" ColumnName="ObligeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondPOA">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondPOA">
+        <MappingFragment StoreEntitySet="ArgAMS_BondPOA">
+          <ScalarProperty Name="BondPOAID" ColumnName="BondPOAID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="POANumber" ColumnName="POANumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondPremiumType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondPremiumType">
+        <MappingFragment StoreEntitySet="ArgAMS_BondPremiumType">
+          <ScalarProperty Name="PremiumTypeID" ColumnName="PremiumTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondPrincipal">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondPrincipal">
+        <MappingFragment StoreEntitySet="ArgAMS_BondPrincipal">
+          <ScalarProperty Name="BondPrincipalID" ColumnName="BondPrincipalID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_BondStatus">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_BondStatus">
+        <MappingFragment StoreEntitySet="ArgAms_BondStatus">
+          <ScalarProperty Name="BondStatusID" ColumnName="BondStatusID" />
+          <ScalarProperty Name="BondStatus" ColumnName="BondStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondSubType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondSubType">
+        <MappingFragment StoreEntitySet="ArgAMS_BondSubType">
+          <ScalarProperty Name="SubTypeID" ColumnName="SubTypeID" />
+          <ScalarProperty Name="SubType" ColumnName="SubType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_BondTaxFee">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_BondTaxFee">
+        <MappingFragment StoreEntitySet="ArgAms_BondTaxFee">
+          <ScalarProperty Name="BondDetailTaxFeeID" ColumnName="BondDetailTaxFeeID" />
+          <ScalarProperty Name="TaxFeeID" ColumnName="TaxFeeID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ForeignAmount" ColumnName="ForeignAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondTerm">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondTerm">
+        <MappingFragment StoreEntitySet="ArgAMS_BondTerm">
+          <ScalarProperty Name="BondTermID" ColumnName="BondTermID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondTransaction">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondTransaction">
+        <MappingFragment StoreEntitySet="ArgAMS_BondTransaction">
+          <ScalarProperty Name="BondTransactionID" ColumnName="BondTransactionID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="BondTransTypeID" ColumnName="BondTransTypeID" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="PremiumAmount" ColumnName="PremiumAmount" />
+          <ScalarProperty Name="EndorsedPremium" ColumnName="EndorsedPremium" />
+          <ScalarProperty Name="BillingEffectiveDate" ColumnName="BillingEffectiveDate" />
+          <ScalarProperty Name="NoteDescription" ColumnName="NoteDescription" />
+          <ScalarProperty Name="TotalTaxandFee" ColumnName="TotalTaxandFee" />
+          <ScalarProperty Name="EndorsementReason" ColumnName="EndorsementReason" />
+          <ScalarProperty Name="AgencyChangeReason" ColumnName="AgencyChangeReason" />
+          <ScalarProperty Name="TaxFeeDetail" ColumnName="TaxFeeDetail" />
+          <ScalarProperty Name="EndorsedAmount" ColumnName="EndorsedAmount" />
+          <ScalarProperty Name="EndorsedCommission" ColumnName="EndorsedCommission" />
+          <ScalarProperty Name="IsBulkBill" ColumnName="IsBulkBill" />
+          <ScalarProperty Name="BulkBillStartDate" ColumnName="BulkBillStartDate" />
+          <ScalarProperty Name="BulkBillEndDate" ColumnName="BulkBillEndDate" />
+          <ScalarProperty Name="BulkBillType" ColumnName="BulkBillType" />
+          <ScalarProperty Name="EndorsementId" ColumnName="EndorsementId" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondTransactionForeign">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondTransactionForeign">
+        <MappingFragment StoreEntitySet="ArgAMS_BondTransactionForeign">
+          <ScalarProperty Name="BondTransactionForeignId" ColumnName="BondTransactionForeignId" />
+          <ScalarProperty Name="BondTransactionId" ColumnName="BondTransactionId" />
+          <ScalarProperty Name="BondTransTypeId" ColumnName="BondTransTypeId" />
+          <ScalarProperty Name="BondId" ColumnName="BondId" />
+          <ScalarProperty Name="EndorsementId" ColumnName="EndorsementId" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="RateOverride" ColumnName="RateOverride" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="ExchangeRateDate" ColumnName="ExchangeRateDate" />
+          <ScalarProperty Name="ForeignBondAmount" ColumnName="ForeignBondAmount" />
+          <ScalarProperty Name="TotalForeignPremium" ColumnName="TotalForeignPremium" />
+          <ScalarProperty Name="ForeignPremium" ColumnName="ForeignPremium" />
+          <ScalarProperty Name="TotalForeignCommission" ColumnName="TotalForeignCommission" />
+          <ScalarProperty Name="ForeignCommission" ColumnName="ForeignCommission" />
+          <ScalarProperty Name="ForeignTotalTaxFee" ColumnName="ForeignTotalTaxFee" />
+          <ScalarProperty Name="InsurancePremiumTax" ColumnName="InsurancePremiumTax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondTransactionType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondTransactionType">
+        <MappingFragment StoreEntitySet="ArgAMS_BondTransactionType">
+          <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondType">
+        <MappingFragment StoreEntitySet="ArgAMS_BondType">
+          <ScalarProperty Name="BondTypeID" ColumnName="BondTypeID" />
+          <ScalarProperty Name="BondType" ColumnName="BondType" />
+          <ScalarProperty Name="BondTypeDescription" ColumnName="BondTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BusinessType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BusinessType">
+        <MappingFragment StoreEntitySet="ArgAMS_BusinessType">
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ClassCodeType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ClassCodeType">
+        <MappingFragment StoreEntitySet="ArgAMS_ClassCodeType">
+          <ScalarProperty Name="ClassCode" ColumnName="ClassCode" />
+          <ScalarProperty Name="ClasscodeType" ColumnName="ClasscodeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Collateral">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Collateral">
+        <MappingFragment StoreEntitySet="ArgAMS_Collateral">
+          <ScalarProperty Name="CollateralID" ColumnName="CollateralID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="InstrumentType" ColumnName="InstrumentType" />
+          <ScalarProperty Name="InstrumentNumber" ColumnName="InstrumentNumber" />
+          <ScalarProperty Name="Institution" ColumnName="Institution" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ReleaseStatus" ColumnName="ReleaseStatus" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="ParentCollateralID" ColumnName="ParentCollateralID" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="OriginalAmount" ColumnName="OriginalAmount" />
+          <ScalarProperty Name="ChargeType" ColumnName="ChargeType" />
+          <ScalarProperty Name="CollateralNote" ColumnName="CollateralNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CollateralType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CollateralType">
+        <MappingFragment StoreEntitySet="ArgAMS_CollateralType">
+          <ScalarProperty Name="CollateralTypeID" ColumnName="CollateralTypeID" />
+          <ScalarProperty Name="CollateralType" ColumnName="CollateralType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialCreditDirection">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialCreditDirection">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialCreditDirection">
+          <ScalarProperty Name="CreditDirectionID" ColumnName="CreditDirectionID" />
+          <ScalarProperty Name="CreditDirectionDesc" ColumnName="CreditDirectionDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialCreditOutlook">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialCreditOutlook">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialCreditOutlook">
+          <ScalarProperty Name="CreditOutlookID" ColumnName="CreditOutlookID" />
+          <ScalarProperty Name="CreditOutlookDesc" ColumnName="CreditOutlookDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialIndemnitor">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialIndemnitor">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialIndemnitor">
+          <ScalarProperty Name="IndemnitorID" ColumnName="IndemnitorID" />
+          <ScalarProperty Name="IndemnitorName" ColumnName="IndemnitorName" />
+          <ScalarProperty Name="IndemnitorTypeID" ColumnName="IndemnitorTypeID" />
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+          <ScalarProperty Name="ExpDate" ColumnName="ExpDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialIndemnitorType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialIndemnitorType">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialIndemnitorType">
+          <ScalarProperty Name="IndemnitorTypeID" ColumnName="IndemnitorTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialIndemnityData">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialIndemnityData">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialIndemnityData">
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+          <ScalarProperty Name="IndemnityTypeID" ColumnName="IndemnityTypeID" />
+          <ScalarProperty Name="PlaceinFunds" ColumnName="PlaceinFunds" />
+          <ScalarProperty Name="Collateral" ColumnName="Collateral" />
+          <ScalarProperty Name="NoofDays" ColumnName="NoofDays" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="NoteId" ColumnName="NoteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialIndemnityType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialIndemnityType">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialIndemnityType">
+          <ScalarProperty Name="IndemnityTypeID" ColumnName="IndemnityTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialSystemRatingCategory">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialSystemRatingCategory">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialSystemRatingCategory">
+          <ScalarProperty Name="RatingCategoryID" ColumnName="RatingCategoryID" />
+          <ScalarProperty Name="RatingCategoryDesc" ColumnName="RatingCategoryDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CommercialSystemRatings">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CommercialSystemRatings">
+        <MappingFragment StoreEntitySet="ArgAMS_CommercialSystemRatings">
+          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+          <ScalarProperty Name="Decription" ColumnName="Decription" />
+          <ScalarProperty Name="RatingType" ColumnName="RatingType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ConstOpsTradeAccount">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ConstOpsTradeAccount">
+        <MappingFragment StoreEntitySet="ArgAMS_ConstOpsTradeAccount">
+          <ScalarProperty Name="TradeAccountID" ColumnName="TradeAccountID" />
+          <ScalarProperty Name="TradeID" ColumnName="TradeID" />
+          <ScalarProperty Name="TradeDescription" ColumnName="TradeDescription" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="SubAccountRef" ColumnName="SubAccountRef" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContactType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContactType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContactType">
+          <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractConstOps">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractConstOps">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractConstOps">
+          <ScalarProperty Name="ConstOpsID" ColumnName="ConstOpsID" />
+          <ScalarProperty Name="PrimaryTradeID" ColumnName="PrimaryTradeID" />
+          <ScalarProperty Name="SecondaryTradeID" ColumnName="SecondaryTradeID" />
+          <ScalarProperty Name="TradeRegion" ColumnName="TradeRegion" />
+          <ScalarProperty Name="Publicpercent" ColumnName="Publicpercent" />
+          <ScalarProperty Name="privatepercent" ColumnName="privatepercent" />
+          <ScalarProperty Name="Primepercent" ColumnName="Primepercent" />
+          <ScalarProperty Name="Subpercent" ColumnName="Subpercent" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractConstOpsExperience">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractConstOpsExperience">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractConstOpsExperience">
+          <ScalarProperty Name="ExperienceID" ColumnName="ExperienceID" />
+          <ScalarProperty Name="ContractAmount" ColumnName="ContractAmount" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="ProjectDesc" ColumnName="ProjectDesc" />
+          <ScalarProperty Name="ScopeofWork" ColumnName="ScopeofWork" />
+          <ScalarProperty Name="ConstOpsID" ColumnName="ConstOpsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_ContractConstOpsTrade">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_ContractConstOpsTrade">
+        <MappingFragment StoreEntitySet="ArgAms_ContractConstOpsTrade">
+          <ScalarProperty Name="TradeID" ColumnName="TradeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractContinuity">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractContinuity">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractContinuity">
+          <ScalarProperty Name="ContinuityID" ColumnName="ContinuityID" />
+          <ScalarProperty Name="Formalagreement" ColumnName="Formalagreement" />
+          <ScalarProperty Name="ContinuityTypeID" ColumnName="ContinuityTypeID" />
+          <ScalarProperty Name="CopyinFile" ColumnName="CopyinFile" />
+          <ScalarProperty Name="FundedByLifeIns" ColumnName="FundedByLifeIns" />
+          <ScalarProperty Name="AmtLifeIns" ColumnName="AmtLifeIns" />
+          <ScalarProperty Name="DateLastConfirmed" ColumnName="DateLastConfirmed" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="CreditID" ColumnName="CreditID" />
+          <ScalarProperty Name="NotesIDTransUnion" ColumnName="NotesIDTransUnion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractCredit">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractCredit">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractCredit">
+          <ScalarProperty Name="CreditID" ColumnName="CreditID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="DBDate" ColumnName="DBDate" />
+          <ScalarProperty Name="DBRatingID" ColumnName="DBRatingID" />
+          <ScalarProperty Name="DBPaydex" ColumnName="DBPaydex" />
+          <ScalarProperty Name="DBSuits" ColumnName="DBSuits" />
+          <ScalarProperty Name="DBLiens" ColumnName="DBLiens" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="ReferenceInFile" ColumnName="ReferenceInFile" />
+          <ScalarProperty Name="DatePerformed" ColumnName="DatePerformed" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="DbCompositratingID" ColumnName="DbCompositratingID" />
+          <ScalarProperty Name="Judgement" ColumnName="Judgement" />
+          <ScalarProperty Name="DBCommCreditScore" ColumnName="DBCommCreditScore" />
+          <ScalarProperty Name="DBFinacialStress" ColumnName="DBFinacialStress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractCreditBankLine">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractCreditBankLine">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractCreditBankLine">
+          <ScalarProperty Name="BankLineID" ColumnName="BankLineID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="BankLetterDate" ColumnName="BankLetterDate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="GurantorID" ColumnName="GurantorID" />
+          <ScalarProperty Name="Security1ID" ColumnName="Security1ID" />
+          <ScalarProperty Name="Security2ID" ColumnName="Security2ID" />
+          <ScalarProperty Name="Security3ID" ColumnName="Security3ID" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="CopyCurrentNote" ColumnName="CopyCurrentNote" />
+          <ScalarProperty Name="CopySecurityAgmt" ColumnName="CopySecurityAgmt" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="CreditID" ColumnName="CreditID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_ContractCreditCompositDBRating">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_ContractCreditCompositDBRating">
+        <MappingFragment StoreEntitySet="ArgAms_ContractCreditCompositDBRating">
+          <ScalarProperty Name="DbCompositRatingId" ColumnName="DbCompositRatingId" />
+          <ScalarProperty Name="DbCompositRatingDescription" ColumnName="DbCompositRatingDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractCreditContinuityType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractCreditContinuityType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractCreditContinuityType">
+          <ScalarProperty Name="ContTypeID" ColumnName="ContTypeID" />
+          <ScalarProperty Name="ContTypeDesc" ColumnName="ContTypeDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractCreditDBRatings">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractCreditDBRatings">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractCreditDBRatings">
+          <ScalarProperty Name="DBRatingID" ColumnName="DBRatingID" />
+          <ScalarProperty Name="DBRatingDescription" ColumnName="DBRatingDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractCreditGurantorList">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractCreditGurantorList">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractCreditGurantorList">
+          <ScalarProperty Name="BLGurantor" ColumnName="BLGurantor" />
+          <ScalarProperty Name="GurantorDesc" ColumnName="GurantorDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_ContractCreditRateType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_ContractCreditRateType">
+        <MappingFragment StoreEntitySet="ArgAms_ContractCreditRateType">
+          <ScalarProperty Name="ContractCreditRateTypeID" ColumnName="ContractCreditRateTypeID" />
+          <ScalarProperty Name="ContractCreditrateTypeDescription" ColumnName="ContractCreditrateTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractCreditSecuritylist">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractCreditSecuritylist">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractCreditSecuritylist">
+          <ScalarProperty Name="SecurityID" ColumnName="SecurityID" />
+          <ScalarProperty Name="SecurityDesc" ColumnName="SecurityDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnitors">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnitors">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnitors">
+          <ScalarProperty Name="IndemnitorID" ColumnName="IndemnitorID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="YearofBirth" ColumnName="YearofBirth" />
+          <ScalarProperty Name="ownership" ColumnName="ownership" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IndemnityTypeID" ColumnName="IndemnityTypeID" />
+          <ScalarProperty Name="LatestFS" ColumnName="LatestFS" />
+          <ScalarProperty Name="NetWorth" ColumnName="NetWorth" />
+          <ScalarProperty Name="WkgCap" ColumnName="WkgCap" />
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+          <ScalarProperty Name="ModificationTypeID" ColumnName="ModificationTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnitorType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnitorType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnitorType">
+          <ScalarProperty Name="IndemnitorTypeID" ColumnName="IndemnitorTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnity">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnity">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnity">
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnityAddlIndemnitor">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnityAddlIndemnitor">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnityAddlIndemnitor">
+          <ScalarProperty Name="AddlIndemnitorID" ColumnName="AddlIndemnitorID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IndemnitorTypeID" ColumnName="IndemnitorTypeID" />
+          <ScalarProperty Name="Affiliated" ColumnName="Affiliated" />
+          <ScalarProperty Name="LatestFS" ColumnName="LatestFS" />
+          <ScalarProperty Name="NetWorth" ColumnName="NetWorth" />
+          <ScalarProperty Name="WkgCap" ColumnName="WkgCap" />
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnityAgreementType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnityAgreementType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnityAgreementType">
+          <ScalarProperty Name="AgreementTypeID" ColumnName="AgreementTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnityILOC">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnityILOC">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnityILOC">
+          <ScalarProperty Name="ILOCID" ColumnName="ILOCID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PostedBy" ColumnName="PostedBy" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="MaturityDt" ColumnName="MaturityDt" />
+          <ScalarProperty Name="ReleaseDt" ColumnName="ReleaseDt" />
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+          <ScalarProperty Name="FormTypeId" ColumnName="FormTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnitySubOrdination">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnitySubOrdination">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnitySubOrdination">
+          <ScalarProperty Name="SubOrdinationID" ColumnName="SubOrdinationID" />
+          <ScalarProperty Name="Creditor" ColumnName="Creditor" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AgreementTypeID" ColumnName="AgreementTypeID" />
+          <ScalarProperty Name="MaturityDt" ColumnName="MaturityDt" />
+          <ScalarProperty Name="ReleaseDt" ColumnName="ReleaseDt" />
+          <ScalarProperty Name="IndemnityID" ColumnName="IndemnityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractIndemnityType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractIndemnityType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractIndemnityType">
+          <ScalarProperty Name="IndemnityTypeID" ColumnName="IndemnityTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractModificationType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractModificationType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractModificationType">
+          <ScalarProperty Name="ModificationTypeID" ColumnName="ModificationTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractOwnerDetails">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractOwnerDetails">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractOwnerDetails">
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="OwnerDescription" ColumnName="OwnerDescription" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+          <ScalarProperty Name="CreditID" ColumnName="CreditID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractRateClassCode">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractRateClassCode">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractRateClassCode">
+          <ScalarProperty Name="ContractRateClassCodeID" ColumnName="ContractRateClassCodeID" />
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="BondClassCodeID" ColumnName="BondClassCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractRateDetails">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractRateDetails">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractRateDetails">
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="StatementDate" ColumnName="StatementDate" />
+          <ScalarProperty Name="ClassCodeID" ColumnName="ClassCodeID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RefContractRatePlanID" ColumnName="RefContractRatePlanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractRatePlan">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractRatePlan">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractRatePlan">
+          <ScalarProperty Name="ContractRatePlanID" ColumnName="ContractRatePlanID" />
+          <ScalarProperty Name="ContractRateTypeID" ColumnName="ContractRateTypeID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SystemEffectiveDate" ColumnName="SystemEffectiveDate" />
+          <ScalarProperty Name="SystemEntryDate" ColumnName="SystemEntryDate" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_ContractRatePlanDetails">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_ContractRatePlanDetails">
+        <MappingFragment StoreEntitySet="ArgAms_ContractRatePlanDetails">
+          <ScalarProperty Name="RatePlanDetailID" ColumnName="RatePlanDetailID" />
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="LowerLimit" ColumnName="LowerLimit" />
+          <ScalarProperty Name="UpperLimit" ColumnName="UpperLimit" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="BaseRate" ColumnName="BaseRate" />
+          <ScalarProperty Name="FlexFactor" ColumnName="FlexFactor" />
+          <ScalarProperty Name="FlexRate" ColumnName="FlexRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_ContractRateStep">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_ContractRateStep">
+        <MappingFragment StoreEntitySet="ArgAms_ContractRateStep">
+          <ScalarProperty Name="ContractRateStepID" ColumnName="ContractRateStepID" />
+          <ScalarProperty Name="LowerLimit" ColumnName="LowerLimit" />
+          <ScalarProperty Name="UpperLimit" ColumnName="UpperLimit" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="ContractRatePlanID" ColumnName="ContractRatePlanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractRateType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractRateType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractRateType">
+          <ScalarProperty Name="ContractRateTypeID" ColumnName="ContractRateTypeID" />
+          <ScalarProperty Name="ContractRateType" ColumnName="ContractRateType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CoSurety">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CoSurety">
+        <MappingFragment StoreEntitySet="ArgAMS_CoSurety">
+          <ScalarProperty Name="CoSuretyId" ColumnName="CoSuretyId" />
+          <ScalarProperty Name="SuretyCompanyName" ColumnName="SuretyCompanyName" />
+          <ScalarProperty Name="TotalBondAmount" ColumnName="TotalBondAmount" />
+          <ScalarProperty Name="ParticipationPercent" ColumnName="ParticipationPercent" />
+          <ScalarProperty Name="JointSeveral" ColumnName="JointSeveral" />
+          <ScalarProperty Name="SideAgreement" ColumnName="SideAgreement" />
+          <ScalarProperty Name="SeparateAgreement" ColumnName="SeparateAgreement" />
+          <ScalarProperty Name="BondId" ColumnName="BondId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Country">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Country">
+        <MappingFragment StoreEntitySet="ArgAMS_Country">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Endorsement">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Endorsement">
+        <MappingFragment StoreEntitySet="ArgAMS_Endorsement">
+          <ScalarProperty Name="EndorsementID" ColumnName="EndorsementID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="EndorsementTypeID" ColumnName="EndorsementTypeID" />
+          <ScalarProperty Name="EndorsementNumber" ColumnName="EndorsementNumber" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+          <ScalarProperty Name="EndorsementDesc" ColumnName="EndorsementDesc" />
+          <ScalarProperty Name="PriorEarnedPremium" ColumnName="PriorEarnedPremium" />
+          <ScalarProperty Name="PriorUnearnedPremium" ColumnName="PriorUnearnedPremium" />
+          <ScalarProperty Name="EndorsementPremium" ColumnName="EndorsementPremium" />
+          <ScalarProperty Name="RenewalNumber" ColumnName="RenewalNumber" />
+          <ScalarProperty Name="EndorsementEffectiveDate" ColumnName="EndorsementEffectiveDate" />
+          <ScalarProperty Name="EndorsementAmount" ColumnName="EndorsementAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAms_EndorsementType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAms_EndorsementType">
+        <MappingFragment StoreEntitySet="ArgAms_EndorsementType">
+          <ScalarProperty Name="EndorsementTypeID" ColumnName="EndorsementTypeID" />
+          <ScalarProperty Name="EndorsementType" ColumnName="EndorsementType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Exchange">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Exchange">
+        <MappingFragment StoreEntitySet="ArgAMS_Exchange">
+          <ScalarProperty Name="ExchangeID" ColumnName="ExchangeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Factor_Type_Mst">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Factor_Type_Mst">
+        <MappingFragment StoreEntitySet="ArgAMS_Factor_Type_Mst">
+          <ScalarProperty Name="Factor_Type_ID" ColumnName="Factor_Type_ID" />
+          <ScalarProperty Name="Factor_Type" ColumnName="Factor_Type" />
+          <ScalarProperty Name="Factor_Type_Description" ColumnName="Factor_Type_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialBalanceSheet">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialBalanceSheet">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialBalanceSheet">
+          <ScalarProperty Name="BalanceSheetID" ColumnName="BalanceSheetID" />
+          <ScalarProperty Name="TotalAssets" ColumnName="TotalAssets" />
+          <ScalarProperty Name="WorkingCapital" ColumnName="WorkingCapital" />
+          <ScalarProperty Name="TotalLiabilitiesnEquity" ColumnName="TotalLiabilitiesnEquity" />
+          <ScalarProperty Name="CurrencyDenomination" ColumnName="CurrencyDenomination" />
+          <ScalarProperty Name="StatementID" ColumnName="StatementID" />
+          <ScalarProperty Name="OtherCurrentAssets" ColumnName="OtherCurrentAssets" />
+          <ScalarProperty Name="TotalCurrentAssets" ColumnName="TotalCurrentAssets" />
+          <ScalarProperty Name="OtherLongTermAssets" ColumnName="OtherLongTermAssets" />
+          <ScalarProperty Name="TotalLongTermAssets" ColumnName="TotalLongTermAssets" />
+          <ScalarProperty Name="OtherCurrentLiabilities" ColumnName="OtherCurrentLiabilities" />
+          <ScalarProperty Name="TotalCurrentLiabilities" ColumnName="TotalCurrentLiabilities" />
+          <ScalarProperty Name="OtherLongTermLiabilties" ColumnName="OtherLongTermLiabilties" />
+          <ScalarProperty Name="TotalLongtermLiabilities" ColumnName="TotalLongtermLiabilities" />
+          <ScalarProperty Name="TotalLiability" ColumnName="TotalLiability" />
+          <ScalarProperty Name="OtherEquity" ColumnName="OtherEquity" />
+          <ScalarProperty Name="TotalEquity" ColumnName="TotalEquity" />
+          <ScalarProperty Name="PrepaidAccruals" ColumnName="PrepaidAccruals" />
+          <ScalarProperty Name="DeferredTaxes" ColumnName="DeferredTaxes" />
+          <ScalarProperty Name="Underbillings" ColumnName="Underbillings" />
+          <ScalarProperty Name="Investments" ColumnName="Investments" />
+          <ScalarProperty Name="Accruals" ColumnName="Accruals" />
+          <ScalarProperty Name="Overbillings" ColumnName="Overbillings" />
+          <ScalarProperty Name="Deferrals" ColumnName="Deferrals" />
+          <ScalarProperty Name="FitPayable" ColumnName="FitPayable" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialBalanceSheetLineItem">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialBalanceSheetLineItem">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialBalanceSheetLineItem">
+          <ScalarProperty Name="BSLineItemID" ColumnName="BSLineItemID" />
+          <ScalarProperty Name="LineItemID" ColumnName="LineItemID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="BalanceSheetID" ColumnName="BalanceSheetID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Adjustment" ColumnName="Adjustment" />
+          <ScalarProperty Name="AsGiven" ColumnName="AsGiven" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialBusinessType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialBusinessType">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialBusinessType">
+          <ScalarProperty Name="FinancialBussinessTypeID" ColumnName="FinancialBussinessTypeID" />
+          <ScalarProperty Name="BusinessType" ColumnName="BusinessType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialCashFlow">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialCashFlow">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialCashFlow">
+          <ScalarProperty Name="CashFlowID" ColumnName="CashFlowID" />
+          <ScalarProperty Name="NetChangeInCash" ColumnName="NetChangeInCash" />
+          <ScalarProperty Name="FreeCashFlow" ColumnName="FreeCashFlow" />
+          <ScalarProperty Name="NetCashOperatingAct" ColumnName="NetCashOperatingAct" />
+          <ScalarProperty Name="NetCashInvestingAct" ColumnName="NetCashInvestingAct" />
+          <ScalarProperty Name="NetCashFinancingingAct" ColumnName="NetCashFinancingingAct" />
+          <ScalarProperty Name="Statementid" ColumnName="Statementid" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="note" ColumnName="note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialCashFlowLineItem">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialCashFlowLineItem">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialCashFlowLineItem">
+          <ScalarProperty Name="CFlineItemID" ColumnName="CFlineItemID" />
+          <ScalarProperty Name="LineItemID" ColumnName="LineItemID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="CashFlowID" ColumnName="CashFlowID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialHeader">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialHeader">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialHeader">
+          <ScalarProperty Name="StatementID" ColumnName="StatementID" />
+          <ScalarProperty Name="StatementTypeID" ColumnName="StatementTypeID" />
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="Auditor" ColumnName="Auditor" />
+          <ScalarProperty Name="CPACompletionDate" ColumnName="CPACompletionDate" />
+          <ScalarProperty Name="StatementDate" ColumnName="StatementDate" />
+          <ScalarProperty Name="CurrencyDenomination" ColumnName="CurrencyDenomination" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="PeriodEndDate" ColumnName="PeriodEndDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="InterimMonths" ColumnName="InterimMonths" />
+          <ScalarProperty Name="CPAReputation" ColumnName="CPAReputation" />
+          <ScalarProperty Name="QualityOfPresentation" ColumnName="QualityOfPresentation" />
+          <ScalarProperty Name="QualityOfIAS" ColumnName="QualityOfIAS" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="EntityName" ColumnName="EntityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialIncomeStatementLineItem">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialIncomeStatementLineItem">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialIncomeStatementLineItem">
+          <ScalarProperty Name="ICLineItemID" ColumnName="ICLineItemID" />
+          <ScalarProperty Name="LineItemID" ColumnName="LineItemID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Statementid" ColumnName="Statementid" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialLineItemAccount">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialLineItemAccount">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialLineItemAccount">
+          <ScalarProperty Name="LineItemAccountId" ColumnName="LineItemAccountId" />
+          <ScalarProperty Name="LineItemId" ColumnName="LineItemId" />
+          <ScalarProperty Name="AccountFlag" ColumnName="AccountFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialPeriodType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialPeriodType">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialPeriodType">
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsCiqPeriod" ColumnName="IsCiqPeriod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialSectionType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialSectionType">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialSectionType">
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Grpindicator" ColumnName="Grpindicator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Form">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Form">
+        <MappingFragment StoreEntitySet="ArgAMS_Form">
+          <ScalarProperty Name="FormID" ColumnName="FormID" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="FormLocation" ColumnName="FormLocation" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_InClaimStatus">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_InClaimStatus">
+        <MappingFragment StoreEntitySet="ArgAMS_InClaimStatus">
+          <ScalarProperty Name="ClaimStatusId" ColumnName="ClaimStatusId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StatusOrder" ColumnName="StatusOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_InvoiceErrorDetail">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_InvoiceErrorDetail">
+        <MappingFragment StoreEntitySet="ArgAMS_InvoiceErrorDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BondId" ColumnName="BondId" />
+          <ScalarProperty Name="BondTransactionId" ColumnName="BondTransactionId" />
+          <ScalarProperty Name="ErrorDetail" ColumnName="ErrorDetail" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="SystemDate" ColumnName="SystemDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Job">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Job">
+        <MappingFragment StoreEntitySet="ArgAMS_Job">
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="WIPID" ColumnName="WIPID" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="CPPCO" ColumnName="CPPCO" />
+          <ScalarProperty Name="OECPCCO" ColumnName="OECPCCO" />
+          <ScalarProperty Name="BilledToDate" ColumnName="BilledToDate" />
+          <ScalarProperty Name="CostToDate" ColumnName="CostToDate" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Location">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Location">
+        <MappingFragment StoreEntitySet="ArgAMS_Location">
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Note">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Note">
+        <MappingFragment StoreEntitySet="ArgAMS_Note">
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="NoteDescription" ColumnName="NoteDescription" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="NoteTypeID" ColumnName="NoteTypeID" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_NoteType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_NoteType">
+        <MappingFragment StoreEntitySet="ArgAMS_NoteType">
+          <ScalarProperty Name="NoteTypeID" ColumnName="NoteTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Obligee">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Obligee">
+        <MappingFragment StoreEntitySet="ArgAMS_Obligee">
+          <ScalarProperty Name="ObligeeID" ColumnName="ObligeeID" />
+          <ScalarProperty Name="ObligeeName" ColumnName="ObligeeName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phoneno" ColumnName="Phoneno" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="WebAddress" ColumnName="WebAddress" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_POAAgency">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_POAAgency">
+        <MappingFragment StoreEntitySet="ArgAMS_POAAgency">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="POANumber" ColumnName="POANumber" />
+          <ScalarProperty Name="WritingCompanyID" ColumnName="WritingCompanyID" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Principal">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Principal">
+        <MappingFragment StoreEntitySet="ArgAMS_Principal">
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="PrincipalName" ColumnName="PrincipalName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="SICCode" ColumnName="SICCode" />
+          <ScalarProperty Name="PrinipalTypeID" ColumnName="PrinipalTypeID" />
+          <ScalarProperty Name="ForeignOwned" ColumnName="ForeignOwned" />
+          <ScalarProperty Name="PublicTraded" ColumnName="PublicTraded" />
+          <ScalarProperty Name="Ticker" ColumnName="Ticker" />
+          <ScalarProperty Name="ExchangeID" ColumnName="ExchangeID" />
+          <ScalarProperty Name="Confidentiality" ColumnName="Confidentiality" />
+          <ScalarProperty Name="ConfidentialityDate" ColumnName="ConfidentialityDate" />
+          <ScalarProperty Name="Babkruptcy" ColumnName="Babkruptcy" />
+          <ScalarProperty Name="BankruptcyDate" ColumnName="BankruptcyDate" />
+          <ScalarProperty Name="WatchList" ColumnName="WatchList" />
+          <ScalarProperty Name="WatchListDate" ColumnName="WatchListDate" />
+          <ScalarProperty Name="Collateral" ColumnName="Collateral" />
+          <ScalarProperty Name="CollateralDate" ColumnName="CollateralDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="Modifiedby" ColumnName="Modifiedby" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="AddressTypeId" ColumnName="AddressTypeId" />
+          <ScalarProperty Name="RefAccountNumber" ColumnName="RefAccountNumber" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="PrivateEquityOwned" ColumnName="PrivateEquityOwned" />
+          <ScalarProperty Name="OpenClaim" ColumnName="OpenClaim" />
+          <ScalarProperty Name="PrivateEquityOwnedListId" ColumnName="PrivateEquityOwnedListId" />
+          <ScalarProperty Name="PEInceptionDate" ColumnName="PEInceptionDate" />
+          <ScalarProperty Name="CapIQId" ColumnName="CapIQId" />
+          <ScalarProperty Name="CapIQUploadDate" ColumnName="CapIQUploadDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_PrincipalType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_PrincipalType">
+        <MappingFragment StoreEntitySet="ArgAMS_PrincipalType">
+          <ScalarProperty Name="PrincipalTypeID" ColumnName="PrincipalTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_PriorSurety">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_PriorSurety">
+        <MappingFragment StoreEntitySet="ArgAMS_PriorSurety">
+          <ScalarProperty Name="PriorSuretyID" ColumnName="PriorSuretyID" />
+          <ScalarProperty Name="PriorSuretyDesc" ColumnName="PriorSuretyDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_PrivateEquityOwnedList">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_PrivateEquityOwnedList">
+        <MappingFragment StoreEntitySet="ArgAMS_PrivateEquityOwnedList">
+          <ScalarProperty Name="PrivateEquityOwnedListId" ColumnName="PrivateEquityOwnedListId" />
+          <ScalarProperty Name="EquityName" ColumnName="EquityName" />
+          <ScalarProperty Name="NeedsApproval" ColumnName="NeedsApproval" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ProgramAuth">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ProgramAuth">
+        <MappingFragment StoreEntitySet="ArgAMS_ProgramAuth">
+          <ScalarProperty Name="ProgramAuthID" ColumnName="ProgramAuthID" />
+          <ScalarProperty Name="SingleLimit" ColumnName="SingleLimit" />
+          <ScalarProperty Name="AggregateLimit" ColumnName="AggregateLimit" />
+          <ScalarProperty Name="GivenToUserID" ColumnName="GivenToUserID" />
+          <ScalarProperty Name="GivenByUserID" ColumnName="GivenByUserID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="Continuous" ColumnName="Continuous" />
+          <ScalarProperty Name="Special" ColumnName="Special" />
+          <ScalarProperty Name="GivenToName" ColumnName="GivenToName" />
+          <ScalarProperty Name="modifieddate" ColumnName="modifieddate" />
+          <ScalarProperty Name="AAComplete" ColumnName="AAComplete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateCalculator">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateCalculator">
+        <MappingFragment StoreEntitySet="ArgAMS_RateCalculator">
+          <ScalarProperty Name="RateCalculatorID" ColumnName="RateCalculatorID" />
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="TotalDebt" ColumnName="TotalDebt" />
+          <ScalarProperty Name="NetSales" ColumnName="NetSales" />
+          <ScalarProperty Name="EBIT" ColumnName="EBIT" />
+          <ScalarProperty Name="InterestExpense" ColumnName="InterestExpense" />
+          <ScalarProperty Name="OperatingIncome" ColumnName="OperatingIncome" />
+          <ScalarProperty Name="CashFlowFromOperations" ColumnName="CashFlowFromOperations" />
+          <ScalarProperty Name="CapitalExpenditures" ColumnName="CapitalExpenditures" />
+          <ScalarProperty Name="SNPEquivalentRatingID" ColumnName="SNPEquivalentRatingID" />
+          <ScalarProperty Name="UWAdjustmentID" ColumnName="UWAdjustmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateClassCode">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateClassCode">
+        <MappingFragment StoreEntitySet="ArgAMS_RateClassCode">
+          <ScalarProperty Name="RateClassCodeID" ColumnName="RateClassCodeID" />
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="BondClassCodeID" ColumnName="BondClassCodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateDetail">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateDetail">
+        <MappingFragment StoreEntitySet="ArgAMS_RateDetail">
+          <ScalarProperty Name="RateID" ColumnName="RateID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="RatingCategoryID" ColumnName="RatingCategoryID" />
+          <ScalarProperty Name="MiscRateStructureID" ColumnName="MiscRateStructureID" />
+          <ScalarProperty Name="ContractRateStructureID" ColumnName="ContractRateStructureID" />
+          <ScalarProperty Name="IsMiscHigh" ColumnName="IsMiscHigh" />
+          <ScalarProperty Name="IsMiscLow" ColumnName="IsMiscLow" />
+          <ScalarProperty Name="IsContractHigh" ColumnName="IsContractHigh" />
+          <ScalarProperty Name="IsContractLow" ColumnName="IsContractLow" />
+          <ScalarProperty Name="RateStatusID" ColumnName="RateStatusID" />
+          <ScalarProperty Name="BaseRate" ColumnName="BaseRate" />
+          <ScalarProperty Name="CompanyTypeID" ColumnName="CompanyTypeID" />
+          <ScalarProperty Name="StatementDate" ColumnName="StatementDate" />
+          <ScalarProperty Name="SNPRatingID" ColumnName="SNPRatingID" />
+          <ScalarProperty Name="CreditRanking" ColumnName="CreditRanking" />
+          <ScalarProperty Name="CreditRatingFactor" ColumnName="CreditRatingFactor" />
+          <ScalarProperty Name="NetWorth" ColumnName="NetWorth" />
+          <ScalarProperty Name="MiscLiability" ColumnName="MiscLiability" />
+          <ScalarProperty Name="CapacityToCapitalMiscFactor" ColumnName="CapacityToCapitalMiscFactor" />
+          <ScalarProperty Name="ContractLiability" ColumnName="ContractLiability" />
+          <ScalarProperty Name="CapacityToCapitalContractFactor" ColumnName="CapacityToCapitalContractFactor" />
+          <ScalarProperty Name="CollateralID" ColumnName="CollateralID" />
+          <ScalarProperty Name="CollateralFactor" ColumnName="CollateralFactor" />
+          <ScalarProperty Name="MiscHighExposure" ColumnName="MiscHighExposure" />
+          <ScalarProperty Name="MiscHighExposureFactor" ColumnName="MiscHighExposureFactor" />
+          <ScalarProperty Name="MiscLowExposure" ColumnName="MiscLowExposure" />
+          <ScalarProperty Name="MiscLowExposureTypeID" ColumnName="MiscLowExposureTypeID" />
+          <ScalarProperty Name="MiscLowExposureFactor" ColumnName="MiscLowExposureFactor" />
+          <ScalarProperty Name="ContractHighExposure" ColumnName="ContractHighExposure" />
+          <ScalarProperty Name="ContractHighExposureTypeID" ColumnName="ContractHighExposureTypeID" />
+          <ScalarProperty Name="ContractHighExposureFactor" ColumnName="ContractHighExposureFactor" />
+          <ScalarProperty Name="ContractLowExposure" ColumnName="ContractLowExposure" />
+          <ScalarProperty Name="ContractLowExposureTypeID" ColumnName="ContractLowExposureTypeID" />
+          <ScalarProperty Name="ContractLowExposureFactor" ColumnName="ContractLowExposureFactor" />
+          <ScalarProperty Name="MiscHighTermTypeID" ColumnName="MiscHighTermTypeID" />
+          <ScalarProperty Name="MiscHighTermTypeFactor" ColumnName="MiscHighTermTypeFactor" />
+          <ScalarProperty Name="MiscLowTermTypeID" ColumnName="MiscLowTermTypeID" />
+          <ScalarProperty Name="MiscLowTermTypeFactor" ColumnName="MiscLowTermTypeFactor" />
+          <ScalarProperty Name="ContractHighTermTypeID" ColumnName="ContractHighTermTypeID" />
+          <ScalarProperty Name="ContractHighTermTypeFactor" ColumnName="ContractHighTermTypeFactor" />
+          <ScalarProperty Name="ContractLowTermTypeID" ColumnName="ContractLowTermTypeID" />
+          <ScalarProperty Name="ContractLowTermTypeFactor" ColumnName="ContractLowTermTypeFactor" />
+          <ScalarProperty Name="MiscHighFormTypeID" ColumnName="MiscHighFormTypeID" />
+          <ScalarProperty Name="MiscHighFormTypeFactor" ColumnName="MiscHighFormTypeFactor" />
+          <ScalarProperty Name="MiscLowFormTypeID" ColumnName="MiscLowFormTypeID" />
+          <ScalarProperty Name="MiscLowFormTypeFactor" ColumnName="MiscLowFormTypeFactor" />
+          <ScalarProperty Name="ContractHighFormTypeID" ColumnName="ContractHighFormTypeID" />
+          <ScalarProperty Name="ContractHighFormTypeFactor" ColumnName="ContractHighFormTypeFactor" />
+          <ScalarProperty Name="ContractLowFormTypeID" ColumnName="ContractLowFormTypeID" />
+          <ScalarProperty Name="ContractLowFormTypeFactor" ColumnName="ContractLowFormTypeFactor" />
+          <ScalarProperty Name="MiscHighExpenseTypeID" ColumnName="MiscHighExpenseTypeID" />
+          <ScalarProperty Name="MiscHighExpenseTypeFactor" ColumnName="MiscHighExpenseTypeFactor" />
+          <ScalarProperty Name="MiscLowExpenseTypeID" ColumnName="MiscLowExpenseTypeID" />
+          <ScalarProperty Name="MiscLowExpenseTypeFactor" ColumnName="MiscLowExpenseTypeFactor" />
+          <ScalarProperty Name="ContractHighExpenseTypeID" ColumnName="ContractHighExpenseTypeID" />
+          <ScalarProperty Name="ContractHighExpenseTypeFactor" ColumnName="ContractHighExpenseTypeFactor" />
+          <ScalarProperty Name="ContractLowExpenseTypeID" ColumnName="ContractLowExpenseTypeID" />
+          <ScalarProperty Name="ContractLowExpenseTypeFactor" ColumnName="ContractLowExpenseTypeFactor" />
+          <ScalarProperty Name="MiscHighARM" ColumnName="MiscHighARM" />
+          <ScalarProperty Name="MiscLowARM" ColumnName="MiscLowARM" />
+          <ScalarProperty Name="ContractHighARM" ColumnName="ContractHighARM" />
+          <ScalarProperty Name="ContractLowARM" ColumnName="ContractLowARM" />
+          <ScalarProperty Name="MiscCompositeCommission" ColumnName="MiscCompositeCommission" />
+          <ScalarProperty Name="MiscHighCommission" ColumnName="MiscHighCommission" />
+          <ScalarProperty Name="MiscLowCommission" ColumnName="MiscLowCommission" />
+          <ScalarProperty Name="ContractCompositeCommission" ColumnName="ContractCompositeCommission" />
+          <ScalarProperty Name="ContractHighCommission" ColumnName="ContractHighCommission" />
+          <ScalarProperty Name="ContractLowCommission" ColumnName="ContractLowCommission" />
+          <ScalarProperty Name="MiscCompositeNet" ColumnName="MiscCompositeNet" />
+          <ScalarProperty Name="MiscCompositeGross" ColumnName="MiscCompositeGross" />
+          <ScalarProperty Name="MiscHighNet" ColumnName="MiscHighNet" />
+          <ScalarProperty Name="MiscHighGross" ColumnName="MiscHighGross" />
+          <ScalarProperty Name="MiscLowNet" ColumnName="MiscLowNet" />
+          <ScalarProperty Name="MiscLowGross" ColumnName="MiscLowGross" />
+          <ScalarProperty Name="ContractCompositeNet" ColumnName="ContractCompositeNet" />
+          <ScalarProperty Name="ContractCompositeGross" ColumnName="ContractCompositeGross" />
+          <ScalarProperty Name="ContractHighNet" ColumnName="ContractHighNet" />
+          <ScalarProperty Name="ContractHighGross" ColumnName="ContractHighGross" />
+          <ScalarProperty Name="ContractLowNet" ColumnName="ContractLowNet" />
+          <ScalarProperty Name="ContractLowGross" ColumnName="ContractLowGross" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="IndividualPurge" ColumnName="IndividualPurge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateFactor">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateFactor">
+        <MappingFragment StoreEntitySet="ArgAMS_RateFactor">
+          <ScalarProperty Name="RateFactorID" ColumnName="RateFactorID" />
+          <ScalarProperty Name="RateFactorTypeID" ColumnName="RateFactorTypeID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="RateTypeID" ColumnName="RateTypeID" />
+          <ScalarProperty Name="ValueText" ColumnName="ValueText" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+          <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SystemAvailableDate" ColumnName="SystemAvailableDate" />
+          <ScalarProperty Name="DateEntered" ColumnName="DateEntered" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateFactorType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateFactorType">
+        <MappingFragment StoreEntitySet="ArgAMS_RateFactorType">
+          <ScalarProperty Name="RateFactorTypeID" ColumnName="RateFactorTypeID" />
+          <ScalarProperty Name="RateFactorType" ColumnName="RateFactorType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Rates_Details">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Rates_Details">
+        <MappingFragment StoreEntitySet="ArgAMS_Rates_Details">
+          <ScalarProperty Name="Rates_ID" ColumnName="Rates_ID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Effective_Date" ColumnName="Effective_Date" />
+          <ScalarProperty Name="Company_Type_ID" ColumnName="Company_Type_ID" />
+          <ScalarProperty Name="SnP_Rating_ID" ColumnName="SnP_Rating_ID" />
+          <ScalarProperty Name="Net_WORTH" ColumnName="Net_WORTH" />
+          <ScalarProperty Name="Contract_Liability" ColumnName="Contract_Liability" />
+          <ScalarProperty Name="Miscellaneous_Liability" ColumnName="Miscellaneous_Liability" />
+          <ScalarProperty Name="Collateral_Position_ID" ColumnName="Collateral_Position_ID" />
+          <ScalarProperty Name="Miscellaneous_Exposure_High" ColumnName="Miscellaneous_Exposure_High" />
+          <ScalarProperty Name="Miscellaneous_Exposure_Low_Type_ID" ColumnName="Miscellaneous_Exposure_Low_Type_ID" />
+          <ScalarProperty Name="Contract_Exposurehigh" ColumnName="Contract_Exposurehigh" />
+          <ScalarProperty Name="Contract_Exposure_Low_Type_ID" ColumnName="Contract_Exposure_Low_Type_ID" />
+          <ScalarProperty Name="Contract_Exposure_High_Type_ID" ColumnName="Contract_Exposure_High_Type_ID" />
+          <ScalarProperty Name="Avg_Bond_Term_Factor_High_Exposure_term_ID" ColumnName="Avg_Bond_Term_Factor_High_Exposure_term_ID" />
+          <ScalarProperty Name="Avg_Bond_Term_Factor_Low_Exposure_term_ID" ColumnName="Avg_Bond_Term_Factor_Low_Exposure_term_ID" />
+          <ScalarProperty Name="Avg_Bond_Term_Factor_High_Exposure_term1_ID" ColumnName="Avg_Bond_Term_Factor_High_Exposure_term1_ID" />
+          <ScalarProperty Name="Avg_Bond_Term_Factor_Low_Exposure_term1_ID" ColumnName="Avg_Bond_Term_Factor_Low_Exposure_term1_ID" />
+          <ScalarProperty Name="Avg_Bond_Contract_Form_Factor_HighBond_Type_ID" ColumnName="Avg_Bond_Contract_Form_Factor_HighBond_Type_ID" />
+          <ScalarProperty Name="Avg_Bond_Contract_Form_Factor_LowBond_Type_ID" ColumnName="Avg_Bond_Contract_Form_Factor_LowBond_Type_ID" />
+          <ScalarProperty Name="Avg_Bond_Contract_Form_Factor_HighBond1_Type_ID" ColumnName="Avg_Bond_Contract_Form_Factor_HighBond1_Type_ID" />
+          <ScalarProperty Name="Avg_Bond_Contract_Form_Factor_LowBond1_Type_ID" ColumnName="Avg_Bond_Contract_Form_Factor_LowBond1_Type_ID" />
+          <ScalarProperty Name="Avg_Expense_Factor_High_Bond_Type_ID" ColumnName="Avg_Expense_Factor_High_Bond_Type_ID" />
+          <ScalarProperty Name="Avg_Expense_Factor_Low_Bond_Type_ID" ColumnName="Avg_Expense_Factor_Low_Bond_Type_ID" />
+          <ScalarProperty Name="Avg_Expense_Factor_High_Bond1_Type_ID" ColumnName="Avg_Expense_Factor_High_Bond1_Type_ID" />
+          <ScalarProperty Name="Avg_Expense_Factor_Low_Bond1_Type_ID" ColumnName="Avg_Expense_Factor_Low_Bond1_Type_ID" />
+          <ScalarProperty Name="Account_Commission" ColumnName="Account_Commission" />
+          <ScalarProperty Name="CommisionType_ID" ColumnName="CommisionType_ID" />
+          <ScalarProperty Name="Class_Code" ColumnName="Class_Code" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RatingCategoryId" ColumnName="RatingCategoryId" />
+          <ScalarProperty Name="ARMS_Misc_High" ColumnName="ARMS_Misc_High" />
+          <ScalarProperty Name="ARMS_Misc_Low" ColumnName="ARMS_Misc_Low" />
+          <ScalarProperty Name="ARMS_Contract_High" ColumnName="ARMS_Contract_High" />
+          <ScalarProperty Name="ARMS_Contract_Low" ColumnName="ARMS_Contract_Low" />
+          <ScalarProperty Name="RateTypeID" ColumnName="RateTypeID" />
+          <ScalarProperty Name="IsFinal" ColumnName="IsFinal" />
+          <ScalarProperty Name="IsMiscHigh" ColumnName="IsMiscHigh" />
+          <ScalarProperty Name="IsMiscLow" ColumnName="IsMiscLow" />
+          <ScalarProperty Name="IsContractHigh" ColumnName="IsContractHigh" />
+          <ScalarProperty Name="IsContractLow" ColumnName="IsContractLow" />
+          <ScalarProperty Name="StatementDate" ColumnName="StatementDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Rates_Status">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Rates_Status">
+        <MappingFragment StoreEntitySet="ArgAMS_Rates_Status">
+          <ScalarProperty Name="RateStatusID" ColumnName="RateStatusID" />
+          <ScalarProperty Name="RateStatus" ColumnName="RateStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateStateType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateStateType">
+        <MappingFragment StoreEntitySet="ArgAMS_RateStateType">
+          <ScalarProperty Name="RateStateTypeID" ColumnName="RateStateTypeID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="RateType" ColumnName="RateType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateStructure">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateStructure">
+        <MappingFragment StoreEntitySet="ArgAMS_RateStructure">
+          <ScalarProperty Name="RateStructureID" ColumnName="RateStructureID" />
+          <ScalarProperty Name="RateStructure" ColumnName="RateStructure" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Region">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Region">
+        <MappingFragment StoreEntitySet="ArgAMS_Region">
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SAAClassCode">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SAAClassCode">
+        <MappingFragment StoreEntitySet="ArgAMS_SAAClassCode">
+          <ScalarProperty Name="ClassCodeID" ColumnName="ClassCodeID" />
+          <ScalarProperty Name="SAAClassCode" ColumnName="SAAClassCode" />
+          <ScalarProperty Name="BondType" ColumnName="BondType" />
+          <ScalarProperty Name="BondCategory" ColumnName="BondCategory" />
+          <ScalarProperty Name="BondDescription" ColumnName="BondDescription" />
+          <ScalarProperty Name="Riskfactor" ColumnName="Riskfactor" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SelfAudit">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SelfAudit">
+        <MappingFragment StoreEntitySet="ArgAMS_SelfAudit">
+          <ScalarProperty Name="SelfAuditID" ColumnName="SelfAuditID" />
+          <ScalarProperty Name="AuditTypeID" ColumnName="AuditTypeID" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Finalized" ColumnName="Finalized" />
+          <ScalarProperty Name="ReviewDate" ColumnName="ReviewDate" />
+          <ScalarProperty Name="ReviewedBy" ColumnName="ReviewedBy" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="PriorYearPremium" ColumnName="PriorYearPremium" />
+          <ScalarProperty Name="PrimaryUW" ColumnName="PrimaryUW" />
+          <ScalarProperty Name="AuthorityExpirationDate" ColumnName="AuthorityExpirationDate" />
+          <ScalarProperty Name="BondID" ColumnName="BondID" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="WrittenPremium" ColumnName="WrittenPremium" />
+          <ScalarProperty Name="BondEffectiveDate" ColumnName="BondEffectiveDate" />
+          <ScalarProperty Name="BondExpirationDate" ColumnName="BondExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SelfAuditAnswers">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SelfAuditAnswers">
+        <MappingFragment StoreEntitySet="ArgAMS_SelfAuditAnswers">
+          <ScalarProperty Name="AnswerID" ColumnName="AnswerID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="SelfAuditID" ColumnName="SelfAuditID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SelfAuditQuestion">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SelfAuditQuestion">
+        <MappingFragment StoreEntitySet="ArgAMS_SelfAuditQuestion">
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="AuditTypeID" ColumnName="AuditTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ParentQuestionID" ColumnName="ParentQuestionID" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ChildTriggerAnswer" ColumnName="ChildTriggerAnswer" />
+          <ScalarProperty Name="EnabledDefault" ColumnName="EnabledDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SelfAuditType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SelfAuditType">
+        <MappingFragment StoreEntitySet="ArgAMS_SelfAuditType">
+          <ScalarProperty Name="AuditTypeID" ColumnName="AuditTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Set_Control_Property_Mst">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Set_Control_Property_Mst">
+        <MappingFragment StoreEntitySet="ArgAMS_Set_Control_Property_Mst">
+          <ScalarProperty Name="Control_Property_ID" ColumnName="Control_Property_ID" />
+          <ScalarProperty Name="On_Action_OF" ColumnName="On_Action_OF" />
+          <ScalarProperty Name="On_Event" ColumnName="On_Event" />
+          <ScalarProperty Name="Script_Type" ColumnName="Script_Type" />
+          <ScalarProperty Name="Function_name" ColumnName="Function_name" />
+          <ScalarProperty Name="Validate_Object" ColumnName="Validate_Object" />
+          <ScalarProperty Name="Validate_Property" ColumnName="Validate_Property" />
+          <ScalarProperty Name="Validate_Property_Value" ColumnName="Validate_Property_Value" />
+          <ScalarProperty Name="Validate_Prop_Datatype" ColumnName="Validate_Prop_Datatype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SICCodeIndustryType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SICCodeIndustryType">
+        <MappingFragment StoreEntitySet="ArgAMS_SICCodeIndustryType">
+          <ScalarProperty Name="IndustryTypeID" ColumnName="IndustryTypeID" />
+          <ScalarProperty Name="IndustryType" ColumnName="IndustryType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_StatusReason">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_StatusReason">
+        <MappingFragment StoreEntitySet="ArgAMS_StatusReason">
+          <ScalarProperty Name="StatusReasonID" ColumnName="StatusReasonID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_TaxFee">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_TaxFee">
+        <MappingFragment StoreEntitySet="ArgAMS_TaxFee">
+          <ScalarProperty Name="TaxFeeID" ColumnName="TaxFeeID" />
+          <ScalarProperty Name="TaxFeeTypeID" ColumnName="TaxFeeTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_TaxFeeState">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_TaxFeeState">
+        <MappingFragment StoreEntitySet="ArgAMS_TaxFeeState">
+          <ScalarProperty Name="TaxFeeStateID" ColumnName="TaxFeeStateID" />
+          <ScalarProperty Name="TaxFeeID" ColumnName="TaxFeeID" />
+          <ScalarProperty Name="StateAbbr" ColumnName="StateAbbr" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_TaxFeeType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_TaxFeeType">
+        <MappingFragment StoreEntitySet="ArgAMS_TaxFeeType">
+          <ScalarProperty Name="TaxFeeTypeID" ColumnName="TaxFeeTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_WIP">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_WIP">
+        <MappingFragment StoreEntitySet="ArgAMS_WIP">
+          <ScalarProperty Name="WIPID" ColumnName="WIPID" />
+          <ScalarProperty Name="AsOfDate" ColumnName="AsOfDate" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_WIPData">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_WIPData">
+        <MappingFragment StoreEntitySet="ArgAMS_WIPData">
+          <ScalarProperty Name="WIPId" ColumnName="WIPId" />
+          <ScalarProperty Name="Original_Contract" ColumnName="Original_Contract" />
+          <ScalarProperty Name="Original_Profit" ColumnName="Original_Profit" />
+          <ScalarProperty Name="Owner_Job_Description" ColumnName="Owner_Job_Description" />
+          <ScalarProperty Name="Job_Number" ColumnName="Job_Number" />
+          <ScalarProperty Name="Contract_Price_Change_Orders" ColumnName="Contract_Price_Change_Orders" />
+          <ScalarProperty Name="Total_Billed_ToDate_Incl_Retainage" ColumnName="Total_Billed_ToDate_Incl_Retainage" />
+          <ScalarProperty Name="Total_Cost_To_Date" ColumnName="Total_Cost_To_Date" />
+          <ScalarProperty Name="Total_Revised_Est_cost_to_complete" ColumnName="Total_Revised_Est_cost_to_complete" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="RevisedEstcostofchangeorders" ColumnName="RevisedEstcostofchangeorders" />
+          <ScalarProperty Name="revisedestgrossprofit" ColumnName="revisedestgrossprofit" />
+          <ScalarProperty Name="grossprofitmargin" ColumnName="grossprofitmargin" />
+          <ScalarProperty Name="costpccomplete" ColumnName="costpccomplete" />
+          <ScalarProperty Name="grossprofitearnedtodate" ColumnName="grossprofitearnedtodate" />
+          <ScalarProperty Name="grossprofittobeearned" ColumnName="grossprofittobeearned" />
+          <ScalarProperty Name="costestearninexcessofbill" ColumnName="costestearninexcessofbill" />
+          <ScalarProperty Name="billinsinearnofcostestearn" ColumnName="billinsinearnofcostestearn" />
+          <ScalarProperty Name="purejobborrow" ColumnName="purejobborrow" />
+          <ScalarProperty Name="cashflowremaining" ColumnName="cashflowremaining" />
+          <ScalarProperty Name="AsofDate" ColumnName="AsofDate" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="Job_Status" ColumnName="Job_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgGCIS_PolicyBond">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgGCIS_PolicyBond">
+        <MappingFragment StoreEntitySet="ArgGCIS_PolicyBond">
+          <ScalarProperty Name="POLID" ColumnName="POLID" />
+          <ScalarProperty Name="BondNumber" ColumnName="BondNumber" />
+          <ScalarProperty Name="GCIC_POL_MDL" ColumnName="GCIC_POL_MDL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgPOA_Client">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgPOA_Client">
+        <MappingFragment StoreEntitySet="ArgPOA_Client">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientAppointee" ColumnName="ClientAppointee" />
+          <ScalarProperty Name="ClientIssueDate" ColumnName="ClientIssueDate" />
+          <ScalarProperty Name="ClientLimit" ColumnName="ClientLimit" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="RequireSignature" ColumnName="RequireSignature" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="DocumentTypeId" ColumnName="DocumentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgPOA_PrintData">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgPOA_PrintData">
+        <MappingFragment StoreEntitySet="ArgPOA_PrintData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PrintID" ColumnName="PrintID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="FirstPrintDate" ColumnName="FirstPrintDate" />
+          <ScalarProperty Name="LastPrintDate" ColumnName="LastPrintDate" />
+          <ScalarProperty Name="PrinterInitials" ColumnName="PrinterInitials" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="vFlag" ColumnName="vFlag" />
+          <ScalarProperty Name="bFlag" ColumnName="bFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_AccessType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_AccessType">
+        <MappingFragment StoreEntitySet="ArgSec_AccessType">
+          <ScalarProperty Name="AccessTypeID" ColumnName="AccessTypeID" />
+          <ScalarProperty Name="Add" ColumnName="Add" />
+          <ScalarProperty Name="Edit" ColumnName="Edit" />
+          <ScalarProperty Name="Delete" ColumnName="Delete" />
+          <ScalarProperty Name="View" ColumnName="View" />
+          <ScalarProperty Name="Endorse" ColumnName="Endorse" />
+          <ScalarProperty Name="Execute" ColumnName="Execute" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="AccessTypeName" ColumnName="AccessTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Level">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Level">
+        <MappingFragment StoreEntitySet="ArgSec_Level">
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="LevelName" ColumnName="LevelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Module">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Module">
+        <MappingFragment StoreEntitySet="ArgSec_Module">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="CreatedByUserId" ColumnName="CreatedByUserId" />
+          <ScalarProperty Name="MainLevel" ColumnName="MainLevel" />
+          <ScalarProperty Name="SubMainLevel" ColumnName="SubMainLevel" />
+          <ScalarProperty Name="RoleIdRequired" ColumnName="RoleIdRequired" />
+          <ScalarProperty Name="ViewAllowed" ColumnName="ViewAllowed" />
+          <ScalarProperty Name="AddAllowed" ColumnName="AddAllowed" />
+          <ScalarProperty Name="DeleteAllowed" ColumnName="DeleteAllowed" />
+          <ScalarProperty Name="EndorseAllowed" ColumnName="EndorseAllowed" />
+          <ScalarProperty Name="ExecuteAllowed" ColumnName="ExecuteAllowed" />
+          <ScalarProperty Name="UnusedAllowed" ColumnName="UnusedAllowed" />
+          <ScalarProperty Name="ModuleFilePathName" ColumnName="ModuleFilePathName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Role">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Role">
+        <MappingFragment StoreEntitySet="ArgSec_Role">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_RoleModule">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_RoleModule">
+        <MappingFragment StoreEntitySet="ArgSec_RoleModule">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="AccessTypeID" ColumnName="AccessTypeID" />
+          <ScalarProperty Name="RoleModuleID" ColumnName="RoleModuleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_RoleScreen">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_RoleScreen">
+        <MappingFragment StoreEntitySet="ArgSec_RoleScreen">
+          <ScalarProperty Name="RoleScreenID" ColumnName="RoleScreenID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="AccessTypeID" ColumnName="AccessTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Screen">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Screen">
+        <MappingFragment StoreEntitySet="ArgSec_Screen">
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TokenString" ColumnName="TokenString" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_ScreenControls">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_ScreenControls">
+        <MappingFragment StoreEntitySet="ArgSec_ScreenControls">
+          <ScalarProperty Name="ScreenControlsID" ColumnName="ScreenControlsID" />
+          <ScalarProperty Name="Screen_ID" ColumnName="Screen_ID" />
+          <ScalarProperty Name="AddControl" ColumnName="AddControl" />
+          <ScalarProperty Name="EditControl" ColumnName="EditControl" />
+          <ScalarProperty Name="DeleteControl" ColumnName="DeleteControl" />
+          <ScalarProperty Name="EndorseControl" ColumnName="EndorseControl" />
+          <ScalarProperty Name="HasControls" ColumnName="HasControls" />
+          <ScalarProperty Name="AddPage" ColumnName="AddPage" />
+          <ScalarProperty Name="EditPage" ColumnName="EditPage" />
+          <ScalarProperty Name="DeletePage" ColumnName="DeletePage" />
+          <ScalarProperty Name="ExecuteControl" ColumnName="ExecuteControl" />
+          <ScalarProperty Name="ExecutePage" ColumnName="ExecutePage" />
+          <ScalarProperty Name="NotesControl" ColumnName="NotesControl" />
+          <ScalarProperty Name="NotesPage" ColumnName="NotesPage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_ScreenModule">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_ScreenModule">
+        <MappingFragment StoreEntitySet="ArgSec_ScreenModule">
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="ScreenModuleID" ColumnName="ScreenModuleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_SecretQuestion">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_SecretQuestion">
+        <MappingFragment StoreEntitySet="ArgSec_SecretQuestion">
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="SecretQuestion" ColumnName="SecretQuestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_SystemLock">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_SystemLock">
+        <MappingFragment StoreEntitySet="ArgSec_SystemLock">
+          <ScalarProperty Name="LockedID" ColumnName="LockedID" />
+          <ScalarProperty Name="LockedbyUserID" ColumnName="LockedbyUserID" />
+          <ScalarProperty Name="LockedOn" ColumnName="LockedOn" />
+          <ScalarProperty Name="LockedPageName" ColumnName="LockedPageName" />
+          <ScalarProperty Name="AccounID" ColumnName="AccounID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_User">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_User">
+        <MappingFragment StoreEntitySet="ArgSec_User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="SecretQuestion" ColumnName="SecretQuestion" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="LoginAttempts" ColumnName="LoginAttempts" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="AuthLimit" ColumnName="AuthLimit" />
+          <ScalarProperty Name="AggregateLimit" ColumnName="AggregateLimit" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="IsWLApprover" ColumnName="IsWLApprover" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_UserLog">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_UserLog">
+        <MappingFragment StoreEntitySet="ArgSec_UserLog">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="EntryNote" ColumnName="EntryNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_UserPasswordHistory">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_UserPasswordHistory">
+        <MappingFragment StoreEntitySet="ArgSec_UserPasswordHistory">
+          <ScalarProperty Name="UserPasswordHistoryID" ColumnName="UserPasswordHistoryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DateChanged" ColumnName="DateChanged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_UserRole">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_UserRole">
+        <MappingFragment StoreEntitySet="ArgSec_UserRole">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserRoleID" ColumnName="UserRoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_UserScreen">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_UserScreen">
+        <MappingFragment StoreEntitySet="ArgSec_UserScreen">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="AccessTypeID" ColumnName="AccessTypeID" />
+          <ScalarProperty Name="UserScreenID" ColumnName="UserScreenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAgency_Notes">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAgency_Notes">
+        <MappingFragment StoreEntitySet="ArgAgency_Notes">
+          <ScalarProperty Name="NoteId" ColumnName="NoteId" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="NoteDesc" ColumnName="NoteDesc" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="argams_account_backup_20111209">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.argams_account_backup_20111209">
+        <MappingFragment StoreEntitySet="argams_account_backup_20111209">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UW1ID" ColumnName="UW1ID" />
+          <ScalarProperty Name="UW2ID" ColumnName="UW2ID" />
+          <ScalarProperty Name="UWAId" ColumnName="UWAId" />
+          <ScalarProperty Name="HomeOffice2Id" ColumnName="HomeOffice2Id" />
+          <ScalarProperty Name="HomeOffice1ID" ColumnName="HomeOffice1ID" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="PriorSuretyID" ColumnName="PriorSuretyID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="NoteId" ColumnName="NoteId" />
+          <ScalarProperty Name="Mgmtcontroldt" ColumnName="Mgmtcontroldt" />
+          <ScalarProperty Name="Argoacqdt" ColumnName="Argoacqdt" />
+          <ScalarProperty Name="LastAcctMtg" ColumnName="LastAcctMtg" />
+          <ScalarProperty Name="isQuoted" ColumnName="isQuoted" />
+          <ScalarProperty Name="isProspect" ColumnName="isProspect" />
+          <ScalarProperty Name="isManualAddress" ColumnName="isManualAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Account_fix">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Account_fix">
+        <MappingFragment StoreEntitySet="ArgAMS_Account_fix">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="BusinessTypeID" ColumnName="BusinessTypeID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UW1ID" ColumnName="UW1ID" />
+          <ScalarProperty Name="UW2ID" ColumnName="UW2ID" />
+          <ScalarProperty Name="UWAId" ColumnName="UWAId" />
+          <ScalarProperty Name="HomeOffice2Id" ColumnName="HomeOffice2Id" />
+          <ScalarProperty Name="HomeOffice1ID" ColumnName="HomeOffice1ID" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="PrincipalID" ColumnName="PrincipalID" />
+          <ScalarProperty Name="PriorSuretyID" ColumnName="PriorSuretyID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="NoteId" ColumnName="NoteId" />
+          <ScalarProperty Name="Mgmtcontroldt" ColumnName="Mgmtcontroldt" />
+          <ScalarProperty Name="Argoacqdt" ColumnName="Argoacqdt" />
+          <ScalarProperty Name="LastAcctMtg" ColumnName="LastAcctMtg" />
+          <ScalarProperty Name="isQuoted" ColumnName="isQuoted" />
+          <ScalarProperty Name="isProspect" ColumnName="isProspect" />
+          <ScalarProperty Name="isManualAddress" ColumnName="isManualAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountTest">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountTest">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountTest">
+          <ScalarProperty Name="AcctID" ColumnName="AcctID" />
+          <ScalarProperty Name="SICCode" ColumnName="SICCode" />
+          <ScalarProperty Name="BondNo" ColumnName="BondNo" />
+          <ScalarProperty Name="AgencyNm" ColumnName="AgencyNm" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ARMS_Details">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ARMS_Details">
+        <MappingFragment StoreEntitySet="ArgAMS_ARMS_Details">
+          <ScalarProperty Name="Rates_ID" ColumnName="Rates_ID" />
+          <ScalarProperty Name="ARMS_Risks_Sub_ID" ColumnName="ARMS_Risks_Sub_ID" />
+          <ScalarProperty Name="Misc_High" ColumnName="Misc_High" />
+          <ScalarProperty Name="Misc_Low" ColumnName="Misc_Low" />
+          <ScalarProperty Name="Contract_High" ColumnName="Contract_High" />
+          <ScalarProperty Name="Contract_Low" ColumnName="Contract_Low" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ARMS_Limits">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ARMS_Limits">
+        <MappingFragment StoreEntitySet="ArgAMS_ARMS_Limits">
+          <ScalarProperty Name="ARMS_Limit_ID" ColumnName="ARMS_Limit_ID" />
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+          <ScalarProperty Name="Max_Limit" ColumnName="Max_Limit" />
+          <ScalarProperty Name="Min_Limit" ColumnName="Min_Limit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ARMS_Risk_Char_GRP_MST">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ARMS_Risk_Char_GRP_MST">
+        <MappingFragment StoreEntitySet="ArgAMS_ARMS_Risk_Char_GRP_MST">
+          <ScalarProperty Name="Risk_Char_GRP_ID" ColumnName="Risk_Char_GRP_ID" />
+          <ScalarProperty Name="Risk_Char_GRP_Name" ColumnName="Risk_Char_GRP_Name" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ARMS_Risks_Sub_MST">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ARMS_Risks_Sub_MST">
+        <MappingFragment StoreEntitySet="ArgAMS_ARMS_Risks_Sub_MST">
+          <ScalarProperty Name="ARMS_Risks_Sub_ID" ColumnName="ARMS_Risks_Sub_ID" />
+          <ScalarProperty Name="Risk_Char_GRP_ID" ColumnName="Risk_Char_GRP_ID" />
+          <ScalarProperty Name="Risk_Name" ColumnName="Risk_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_BondIssueType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_BondIssueType">
+        <MappingFragment StoreEntitySet="ArgAMS_BondIssueType">
+          <ScalarProperty Name="BondIssueTypeID" ColumnName="BondIssueTypeID" />
+          <ScalarProperty Name="IssueType" ColumnName="IssueType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_CollateralTransactionType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_CollateralTransactionType">
+        <MappingFragment StoreEntitySet="ArgAMS_CollateralTransactionType">
+          <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Company_Type_Mst">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Company_Type_Mst">
+        <MappingFragment StoreEntitySet="ArgAMS_Company_Type_Mst">
+          <ScalarProperty Name="Company_Type_ID" ColumnName="Company_Type_ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ContractFormType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ContractFormType">
+        <MappingFragment StoreEntitySet="ArgAMS_ContractFormType">
+          <ScalarProperty Name="FormTypeId" ColumnName="FormTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Factor_Details">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Factor_Details">
+        <MappingFragment StoreEntitySet="ArgAMS_Factor_Details">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Factor_type_ID" ColumnName="Factor_type_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialLineItem">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialLineItem">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialLineItem">
+          <ScalarProperty Name="LineItemId" ColumnName="LineItemId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="grpIndicator" ColumnName="grpIndicator" />
+          <ScalarProperty Name="sectionid" ColumnName="sectionid" />
+          <ScalarProperty Name="AccountFlag" ColumnName="AccountFlag" />
+          <ScalarProperty Name="FinancialBussinessTypeID" ColumnName="FinancialBussinessTypeID" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_FinancialStatementType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_FinancialStatementType">
+        <MappingFragment StoreEntitySet="ArgAMS_FinancialStatementType">
+          <ScalarProperty Name="StatementTypeId" ColumnName="StatementTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Grpindicator" ColumnName="Grpindicator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_Global_Calc_Values">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_Global_Calc_Values">
+        <MappingFragment StoreEntitySet="ArgAMS_Global_Calc_Values">
+          <ScalarProperty Name="Global_ID" ColumnName="Global_ID" />
+          <ScalarProperty Name="Var_Name" ColumnName="Var_Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ProducerCSR">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ProducerCSR">
+        <MappingFragment StoreEntitySet="ArgAMS_ProducerCSR">
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+          <ScalarProperty Name="AgentTypeId" ColumnName="AgentTypeId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_ProgramAuthHistory">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_ProgramAuthHistory">
+        <MappingFragment StoreEntitySet="ArgAMS_ProgramAuthHistory">
+          <ScalarProperty Name="ProgramAuthID" ColumnName="ProgramAuthID" />
+          <ScalarProperty Name="SingleLimit" ColumnName="SingleLimit" />
+          <ScalarProperty Name="AggregateLimit" ColumnName="AggregateLimit" />
+          <ScalarProperty Name="GivenToUserID" ColumnName="GivenToUserID" />
+          <ScalarProperty Name="GivenByUserID" ColumnName="GivenByUserID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="NoteID" ColumnName="NoteID" />
+          <ScalarProperty Name="Continuous" ColumnName="Continuous" />
+          <ScalarProperty Name="Special" ColumnName="Special" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="GivenToName" ColumnName="GivenToName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RateSnPEquivalent">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RateSnPEquivalent">
+        <MappingFragment StoreEntitySet="ArgAMS_RateSnPEquivalent">
+          <ScalarProperty Name="SnPRatingID" ColumnName="SnPRatingID" />
+          <ScalarProperty Name="InterestCoverage" ColumnName="InterestCoverage" />
+          <ScalarProperty Name="FreeCashFlowToTotalDebt" ColumnName="FreeCashFlowToTotalDebt" />
+          <ScalarProperty Name="OperatingIncomeToNetSales" ColumnName="OperatingIncomeToNetSales" />
+          <ScalarProperty Name="TotalDebtToTotalCapital" ColumnName="TotalDebtToTotalCapital" />
+          <ScalarProperty Name="ReturnOnCapital" ColumnName="ReturnOnCapital" />
+          <ScalarProperty Name="TotalCapital" ColumnName="TotalCapital" />
+          <ScalarProperty Name="Ranking" ColumnName="Ranking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_RatesSnPMoodyRating">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_RatesSnPMoodyRating">
+        <MappingFragment StoreEntitySet="ArgAMS_RatesSnPMoodyRating">
+          <ScalarProperty Name="RatingId" ColumnName="RatingId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SICode">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SICode">
+        <MappingFragment StoreEntitySet="ArgAMS_SICode">
+          <ScalarProperty Name="SICID" ColumnName="SICID" />
+          <ScalarProperty Name="SICCode" ColumnName="SICCode" />
+          <ScalarProperty Name="SICDescription" ColumnName="SICDescription" />
+          <ScalarProperty Name="IndustryTypeID" ColumnName="IndustryTypeID" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SnP_Equivalent_Rating_Mst">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SnP_Equivalent_Rating_Mst">
+        <MappingFragment StoreEntitySet="ArgAMS_SnP_Equivalent_Rating_Mst">
+          <ScalarProperty Name="SnP_Rating_ID" ColumnName="SnP_Rating_ID" />
+          <ScalarProperty Name="Int_Coverage" ColumnName="Int_Coverage" />
+          <ScalarProperty Name="FCF_TD" ColumnName="FCF_TD" />
+          <ScalarProperty Name="OI_Sales" ColumnName="OI_Sales" />
+          <ScalarProperty Name="Total_Debt_Total_Cap" ColumnName="Total_Debt_Total_Cap" />
+          <ScalarProperty Name="Return_on_Capital" ColumnName="Return_on_Capital" />
+          <ScalarProperty Name="Total_Capital" ColumnName="Total_Capital" />
+          <ScalarProperty Name="Ranking" ColumnName="Ranking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_SnPCalculateValue">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_SnPCalculateValue">
+        <MappingFragment StoreEntitySet="ArgAMS_SnPCalculateValue">
+          <ScalarProperty Name="Calculate_ID" ColumnName="Calculate_ID" />
+          <ScalarProperty Name="Rates_ID" ColumnName="Rates_ID" />
+          <ScalarProperty Name="Total_Debt" ColumnName="Total_Debt" />
+          <ScalarProperty Name="Net_Sales" ColumnName="Net_Sales" />
+          <ScalarProperty Name="EBIT" ColumnName="EBIT" />
+          <ScalarProperty Name="Interest_Expense" ColumnName="Interest_Expense" />
+          <ScalarProperty Name="Operating_Income" ColumnName="Operating_Income" />
+          <ScalarProperty Name="Cash_Flow_From_Operations" ColumnName="Cash_Flow_From_Operations" />
+          <ScalarProperty Name="Capital_Expenditures" ColumnName="Capital_Expenditures" />
+          <ScalarProperty Name="SnP_Equivalent" ColumnName="SnP_Equivalent" />
+          <ScalarProperty Name="Underwriter_Adjustment_ID" ColumnName="Underwriter_Adjustment_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_USZipList">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_USZipList">
+        <MappingFragment StoreEntitySet="ArgAMS_USZipList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgPOA_Company">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgPOA_Company">
+        <MappingFragment StoreEntitySet="ArgPOA_Company">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyAbbr" ColumnName="CompanyAbbr" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+          <ScalarProperty Name="CompanyCity" ColumnName="CompanyCity" />
+          <ScalarProperty Name="CompanyState" ColumnName="CompanyState" />
+          <ScalarProperty Name="CompanyZip" ColumnName="CompanyZip" />
+          <ScalarProperty Name="CompanyCounty" ColumnName="CompanyCounty" />
+          <ScalarProperty Name="CompanySig1Name" ColumnName="CompanySig1Name" />
+          <ScalarProperty Name="CompanySig1Title" ColumnName="CompanySig1Title" />
+          <ScalarProperty Name="CompanySig1Image" ColumnName="CompanySig1Image" />
+          <ScalarProperty Name="CompanySig2Name" ColumnName="CompanySig2Name" />
+          <ScalarProperty Name="CompanySig2Title" ColumnName="CompanySig2Title" />
+          <ScalarProperty Name="CompanySig2Image" ColumnName="CompanySig2Image" />
+          <ScalarProperty Name="CompanyNotaryStamp" ColumnName="CompanyNotaryStamp" />
+          <ScalarProperty Name="CompanyNotaryImage" ColumnName="CompanyNotaryImage" />
+          <ScalarProperty Name="CompanyNotaryCounty" ColumnName="CompanyNotaryCounty" />
+          <ScalarProperty Name="CompanyNotaryState" ColumnName="CompanyNotaryState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgPOA_State">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgPOA_State">
+        <MappingFragment StoreEntitySet="ArgPOA_State">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="Abbr" ColumnName="Abbr" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Permission">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Permission">
+        <MappingFragment StoreEntitySet="ArgSec_Permission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="EntityTypeID" ColumnName="EntityTypeID" />
+          <ScalarProperty Name="AcessTypeID" ColumnName="AcessTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Temp_AccessType">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Temp_AccessType">
+        <MappingFragment StoreEntitySet="ArgSec_Temp_AccessType">
+          <ScalarProperty Name="AccessTypeID" ColumnName="AccessTypeID" />
+          <ScalarProperty Name="AccessTypeName" ColumnName="AccessTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_Temp_Screen">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_Temp_Screen">
+        <MappingFragment StoreEntitySet="ArgSec_Temp_Screen">
+          <ScalarProperty Name="ScreenID" ColumnName="ScreenID" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TokenString" ColumnName="TokenString" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgSec_temp_ScreenControls">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgSec_temp_ScreenControls">
+        <MappingFragment StoreEntitySet="ArgSec_temp_ScreenControls">
+          <ScalarProperty Name="ScreenControlsID" ColumnName="ScreenControlsID" />
+          <ScalarProperty Name="Screen_ID" ColumnName="Screen_ID" />
+          <ScalarProperty Name="AddControl" ColumnName="AddControl" />
+          <ScalarProperty Name="EditControl" ColumnName="EditControl" />
+          <ScalarProperty Name="DeleteControl" ColumnName="DeleteControl" />
+          <ScalarProperty Name="EndorseControl" ColumnName="EndorseControl" />
+          <ScalarProperty Name="HasControls" ColumnName="HasControls" />
+          <ScalarProperty Name="AddPage" ColumnName="AddPage" />
+          <ScalarProperty Name="EditPage" ColumnName="EditPage" />
+          <ScalarProperty Name="DeletePage" ColumnName="DeletePage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArgAMS_AccountFactsetSecurity">
+      <EntityTypeMapping TypeName="ArgoSuretyModel.ArgAMS_AccountFactsetSecurity">
+        <MappingFragment StoreEntitySet="ArgAMS_AccountFactsetSecurity">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="fs_perm_sec_id" ColumnName="fs_perm_sec_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

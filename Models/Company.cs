@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Factset.Data.ArgoSuretyModels;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,7 @@ namespace Factset.Data.Models
         public string Exchange { get; set; }
 
         public Financial FinancialStatements { get; set; }
+        public AnchorAccount Account { get; set; }
 
     }
 }

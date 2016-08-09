@@ -207,12 +207,595 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ArgoSuretyModels\Account.cs" />
+    <Compile Include="ArgoSuretyModels\ArgoSuretyUnitOfWork.cs" />
+    <Compile Include="ArgoSuretyModels\GenericRepository.cs" />
+    <Compile Include="ArgoSuretyModels\IGenericRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\CompanySearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Domain\affiliate_type_map.cs">
       <DependentUpon>Factset.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_AgencyGroup.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_AgentDetail.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_ContactDetail.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_Demography.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_Notes.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_StatusType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAgency_TitleType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Account.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountCommercialCredit.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountFactsetSecurity.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountGroup.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountStatus.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountTest.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountWatchList.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountWatchListActionPlan.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AccountWatchListStatus.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\argams_account_backup_20111209.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Account_fix.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Address.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AddressType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Agency.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AgencyBORD.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_AgentType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ARMS_Details.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ARMS_Limits.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ARMS_Risks_Sub_MST.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ARMS_Risk_Char_GRP_MST.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BillingType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondBillingType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondClassCode.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondClose.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondContractInfo.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondContractRatePlan.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondDetail.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondForm.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondFronting.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondFrontingBroker.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondIssueType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondNonRenewal.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_BondNotes.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondNumberAgency.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondObligee.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondPOA.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondPremiumType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondPrincipal.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_BondStatus.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondSubType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_BondTaxFee.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondTerm.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondTransaction.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondTransactionForeign.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondTransactionType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BondType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_BusinessType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ClassCodeType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Collateral.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CollateralTransactionType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CollateralType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialCreditDirection.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialCreditOutlook.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialIndemnitor.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialIndemnitorType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialIndemnityData.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialIndemnityType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialSystemRatingCategory.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CommercialSystemRatings.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Company_Type_Mst.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ConstOpsTradeAccount.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContactType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractConstOps.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractConstOpsExperience.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_ContractConstOpsTrade.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractContinuity.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractCredit.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractCreditBankLine.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_ContractCreditCompositDBRating.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractCreditContinuityType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractCreditDBRatings.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractCreditGurantorList.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_ContractCreditRateType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractCreditSecuritylist.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractFormType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnitors.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnitorType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnity.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnityAddlIndemnitor.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnityAgreementType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnityILOC.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnitySubOrdination.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractIndemnityType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractModificationType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractOwnerDetails.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractRateClassCode.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractRateDetails.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractRatePlan.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_ContractRatePlanDetails.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_ContractRateStep.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ContractRateType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_CoSurety.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Country.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Endorsement.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAms_EndorsementType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Exchange.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Factor_Details.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Factor_Type_Mst.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialBalanceSheet.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialBalanceSheetLineItem.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialBusinessType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialCashFlow.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialCashFlowLineItem.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialHeader.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialIncomeStatementLineItem.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialLineItem.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialLineItemAccount.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialPeriodType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialSectionType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_FinancialStatementType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Form.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Global_Calc_Values.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_InClaimStatus.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_InvoiceErrorDetail.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Job.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Location.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Note.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_NoteType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Obligee.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_POAAgency.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Principal.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_PrincipalType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_PriorSurety.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_PrivateEquityOwnedList.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ProducerCSR.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ProgramAuth.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_ProgramAuthHistory.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateCalculator.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateClassCode.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateDetail.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateFactor.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateFactorType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateSnPEquivalent.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RatesSnPMoodyRating.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateStateType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_RateStructure.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Rates_Details.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Rates_Status.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Region.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SAAClassCode.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SelfAudit.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SelfAuditAnswers.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SelfAuditQuestion.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SelfAuditType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_Set_Control_Property_Mst.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SICCodeIndustryType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SICode.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SnPCalculateValue.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_SnP_Equivalent_Rating_Mst.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_StatusReason.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_TaxFee.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_TaxFeeState.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_TaxFeeType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_USZipList.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_WIP.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgAMS_WIPData.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgGCIS_PolicyBond.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgoSurety.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArgoSurety.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgoSurety.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgoSurety.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArgoSurety.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgPOA_Client.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgPOA_Company.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgPOA_PrintData.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgPOA_State.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_AccessType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Level.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Module.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Permission.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Role.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_RoleModule.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_RoleScreen.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Screen.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_ScreenControls.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_ScreenModule.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_SecretQuestion.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_SystemLock.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Temp_AccessType.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_Temp_Screen.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_temp_ScreenControls.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_User.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_UserLog.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_UserPasswordHistory.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_UserRole.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\ArgSec_UserScreen.cs">
+      <DependentUpon>ArgoSurety.tt</DependentUpon>
     </Compile>
     <Compile Include="Domain\asset_class_map.cs">
       <DependentUpon>Factset.tt</DependentUpon>
@@ -675,6 +1258,16 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Domain\ArgoSurety.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ArgoSurety.edmx</DependentUpon>
+      <LastGenOutput>ArgoSurety.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Domain\ArgoSurety.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ArgoSurety.edmx</DependentUpon>
+      <LastGenOutput>ArgoSurety.cs</LastGenOutput>
+    </Content>
     <Content Include="Domain\Factset.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Factset.edmx</DependentUpon>
@@ -708,6 +1301,13 @@
     </EntityDeploy>
     <Content Include="Domain\Factset.edmx.diagram">
       <DependentUpon>Factset.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Domain\ArgoSurety.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ArgoSurety.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Domain\ArgoSurety.edmx.diagram">
+      <DependentUpon>ArgoSurety.edmx</DependentUpon>
     </Content>
     <None Include="Project_Readme.html" />
   </ItemGroup>
