@@ -7,9 +7,10 @@ namespace Factset.Data.ArgoSuretyModels
 {
     public class AnchorAccount
     {
-        int AccountNumber { get; set; }
-        string PrincipalName { get; set; }
-        string PrimaryUW { get; set; }
-        string Agency { get; set; }
+        public int AccountNumber { get; set; }
+        public string PrincipalName { get; set; }
+        public string PrimaryUW { get; set; }
+        public string Agency { get; set; }
+        public string Region { get; set; }
     }
 }

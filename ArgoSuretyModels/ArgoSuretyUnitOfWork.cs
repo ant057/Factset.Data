@@ -14,6 +14,7 @@ namespace Factset.Data.ArgoSuretyModels
         private GenericRepository<ArgAMS_Principal> principalRepository;
         private GenericRepository<ArgAMS_AccountFactsetSecurity> accountFactsetRepository;
         private GenericRepository<ArgAMS_SICode> sicRepository;
+        private GenericRepository<ArgSec_User> userRepository;
 
         public GenericRepository<ArgAMS_Account> AccountRepository
         {
@@ -60,6 +61,18 @@ namespace Factset.Data.ArgoSuretyModels
                     this.sicRepository = new GenericRepository<ArgAMS_SICode>(context);
                 }
                 return sicRepository;
+            }
+        }
+
+        public GenericRepository<ArgSec_User> UserRepository
+        {
+            get
+            {
+                if (this.userRepository == null)
+                {
+                    this.userRepository = new GenericRepository<ArgSec_User>(context);
+                }
+                return userRepository;
             }
         }
 

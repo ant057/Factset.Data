@@ -45,7 +45,7 @@ namespace Factset.Data.Models
         public string Exchange { get; set; }
 
         public Financial FinancialStatements { get; set; }
-        public AnchorAccount Account { get; set; }
+        public AnchorAccount AnchorAccount { get; set; }
 
     }
 }

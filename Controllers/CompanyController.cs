@@ -28,7 +28,21 @@ namespace Factset.Data.Controllers
         public Company GetCompany(string permSecurityId)
         {
             var results = _unitOfWork.CompanyDetailRespository.GetCompany(permSecurityId);
-            //var financial = _unitOfWork.FinancialRepository.GetFinancialStatements(permSecurityId);
+            AnchorAccount companyAccount = new AnchorAccount();
+
+            var anchorFactsetLink = _anchorUnitOfWork.AccountFactsetLinkRepository.GetAll()
+                .Where(a => a.fs_perm_sec_id == permSecurityId)
+                .FirstOrDefault();
+            
+            if(anchorFactsetLink != null)
+            {
+                var account = _anchorUnitOfWork.AccountRepository.Get(int.Parse(anchorFactsetLink.AccountNumber));
+                if (account != null)
+                {
+                    companyAccount.AccountNumber = int.Parse(account.AccountNumber.ToString());
+                }
+                results.AnchorAccount = companyAccount;
+            }
 
             //results.FinancialStatements = financial;
             return results;
@@ -45,7 +59,7 @@ namespace Factset.Data.Controllers
         //api/Company/AddAccount/12345US
         [Route("AddAccount/{permSecurityId}")]
         [HttpPost]
-        public void AddAccount(string permSecurityId)
+        public AnchorAccount AddAccount(string permSecurityId)
         {
             //try
             //{
@@ -63,7 +77,7 @@ namespace Factset.Data.Controllers
                 principal.Country = "";
                 principal.PrinipalTypeID = 0;
                 principal.ForeignOwned = false;
-                principal.PublicTraded = string.IsNullOrEmpty(company.Ticker.Trim()) ? false : true;
+                principal.PublicTraded = string.IsNullOrEmpty(company.Ticker) ? false : true;
                 principal.ExchangeID = 0;
                 principal.Confidentiality = false;
                 principal.ConfidentialityDate = new DateTime(1900, 01, 01);
@@ -106,7 +120,16 @@ namespace Factset.Data.Controllers
                 link.fs_perm_sec_id = company.PermanentSecurityID;
                 link.AccountNumber = account.AccountNumber.ToString();
                 _anchorUnitOfWork.Save();
-                //return results as IEnumerable<CompanyList>;
+            //return results as IEnumerable<CompanyList>;
+
+            return new AnchorAccount()
+            {
+                AccountNumber = int.Parse(account.AccountNumber.ToString()),
+                PrincipalName = principal.PrincipalName,
+                PrimaryUW = "",
+                Agency = "",
+                Region = ""
+            };
             //}
             //catch(Exception e)
             //{
