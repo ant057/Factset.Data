@@ -61,8 +61,9 @@ namespace Factset.Data.Controllers
         [HttpPost]
         public AnchorAccount AddAccount(string permSecurityId)
         {
-            //try
-            //{
+            AnchorAccount newAccount = null;
+            try
+            {
                 var company = _unitOfWork.CompanyDetailRespository.GetCompany(permSecurityId);
                 ArgAMS_AccountFactsetSecurity link = new ArgAMS_AccountFactsetSecurity();
                 ArgAMS_Account account = new ArgAMS_Account();
@@ -87,8 +88,10 @@ namespace Factset.Data.Controllers
                 principal.WatchListDate = new DateTime(1900, 01, 01);
                 principal.Collateral = false;
                 principal.CollateralDate = new DateTime(1900, 01, 01);
-                //var sic = _anchorUnitOfWork.SICRepository.Get(company.SICCode);
-                //principal.SICCode = sic.SICCode;
+                var sic = _anchorUnitOfWork.SICRepository.GetAll()
+                    .Where(s => s.SICCode.ToString() == company.SICCode)
+                    .FirstOrDefault();
+                principal.SICCode = sic.SICCode;
                 principal.Ticker = company.Ticker;
                 principal.EffectiveDate = DateTime.Now;
                 principal.Modifiedby = 105; //SYSADMN
@@ -120,21 +123,26 @@ namespace Factset.Data.Controllers
                 link.fs_perm_sec_id = company.PermanentSecurityID;
                 link.AccountNumber = account.AccountNumber.ToString();
                 _anchorUnitOfWork.Save();
-            //return results as IEnumerable<CompanyList>;
 
-            return new AnchorAccount()
+                newAccount = new AnchorAccount()
+                {
+                    AccountNumber = int.Parse(account.AccountNumber.ToString()),
+                    PrincipalName = principal.PrincipalName,
+                    PrimaryUW = "",
+                    Agency = "",
+                    Region = ""
+                };
+            }
+            catch (Exception e)
             {
-                AccountNumber = int.Parse(account.AccountNumber.ToString()),
-                PrincipalName = principal.PrincipalName,
-                PrimaryUW = "",
-                Agency = "",
-                Region = ""
-            };
-            //}
-            //catch(Exception e)
-            //{
-            //    Console.WriteLine(e);
-            //}
+                Console.WriteLine(e);
+            }
+            finally
+            {
+
+            }
+
+            return newAccount;
         }
     }
 }
