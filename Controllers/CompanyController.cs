@@ -91,7 +91,7 @@ namespace Factset.Data.Controllers
                 var sic = _anchorUnitOfWork.SICRepository.GetAll()
                     .Where(s => s.SICCode.ToString() == company.SICCode)
                     .FirstOrDefault();
-                principal.SICCode = sic.SICCode;
+                principal.SICCode = sic.SICID;
                 principal.Ticker = company.Ticker;
                 principal.EffectiveDate = DateTime.Now;
                 principal.Modifiedby = 105; //SYSADMN
