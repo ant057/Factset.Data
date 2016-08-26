@@ -72,10 +72,13 @@ namespace Factset.Data.Controllers
         [HttpGet]
         public IEnumerable<CompanyList> GetAllCompanies()
         {
-            var results = _unitOfWork.CompanyRepository.GetAll()
-                .OrderBy(c => c.ff_co_name)
-                .ToList()
-                .Select(c => _modelFactory.CreateCompanyList(c));
+            //var results = _unitOfWork.CompanyRepository.GetAll()
+            //    .OrderBy(c => c.ff_co_name)
+            //    .ToList()
+            //    .Select(c => _modelFactory.CreateCompanyList(c));
+
+            SearchParams searchParam = new SearchParams();
+            var results = _unitOfWork.CompanySearchRepository.GetFilteredCompanies(searchParam); //getall
 
             return results;
         }
