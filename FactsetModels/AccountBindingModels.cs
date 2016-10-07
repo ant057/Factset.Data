@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     // Models used as parameters to AccountController actions.
 

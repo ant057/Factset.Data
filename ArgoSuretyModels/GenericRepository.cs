@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 
 namespace Factset.Data.ArgoSuretyModels
@@ -23,6 +25,18 @@ namespace Factset.Data.ArgoSuretyModels
             return _table.ToList();
         }
 
+        public IEnumerable<T> Query(Expression<Func<T, bool>> filter = null)
+        {
+            IQueryable<T> query = _table;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            return query.ToList();
+        }
+
         public T Get(object id)
         {
             return _table.Find(id);
@@ -33,5 +47,9 @@ namespace Factset.Data.ArgoSuretyModels
             _table.Add(obj);
         }
 
+        public void CallSP(string name, params object[] parameters)
+        {
+            _db.Database.ExecuteSqlCommand(name, parameters);
+        }
     }
 }

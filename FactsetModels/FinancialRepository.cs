@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Collections;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     interface IFinancialRepository
     {

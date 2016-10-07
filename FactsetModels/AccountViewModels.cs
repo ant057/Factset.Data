@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     // Models returned by AccountController actions.
 

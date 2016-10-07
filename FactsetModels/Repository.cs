@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     public class Repository<T> : IGenericRepository<T> where T: class
     {

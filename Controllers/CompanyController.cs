@@ -1,8 +1,9 @@
 ﻿using Factset.Data.ArgoSuretyModels;
 using Factset.Data.Domain;
-using Factset.Data.Models;
+using Factset.Data.FactsetModels;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -79,7 +80,10 @@ namespace Factset.Data.Controllers
                 principal.PrinipalTypeID = 0;
                 principal.ForeignOwned = false;
                 principal.PublicTraded = string.IsNullOrEmpty(company.Ticker) ? false : true;
-                principal.ExchangeID = 0;
+                var exch = _anchorUnitOfWork.ExchangeRepository
+                    .Query(e => e.Description == (string.IsNullOrEmpty(company.Exchange) ? "" : company.Exchange) && e.Source == "Factset")
+                    .FirstOrDefault();
+                principal.ExchangeID = exch == null ? 0 : exch.ExchangeID;
                 principal.Confidentiality = false;
                 principal.ConfidentialityDate = new DateTime(1900, 01, 01);
                 principal.Babkruptcy = false;
@@ -88,11 +92,12 @@ namespace Factset.Data.Controllers
                 principal.WatchListDate = new DateTime(1900, 01, 01);
                 principal.Collateral = false;
                 principal.CollateralDate = new DateTime(1900, 01, 01);
-                var sic = _anchorUnitOfWork.SICRepository.GetAll()
+                var sic = _anchorUnitOfWork.SICRepository
+                    .GetAll()
                     .Where(s => s.SICCode.ToString() == company.SICCode)
                     .FirstOrDefault();
                 principal.SICCode = sic.SICID;
-                principal.Ticker = company.Ticker;
+                principal.Ticker = string.IsNullOrEmpty(company.Ticker) ? "" : company.Ticker.Substring(0, company.Ticker.IndexOf("-"));
                 principal.EffectiveDate = DateTime.Now;
                 principal.Modifiedby = 105; //SYSADMN
                 principal.ModifiedDate = DateTime.Now;
@@ -132,6 +137,15 @@ namespace Factset.Data.Controllers
                     Agency = "",
                     Region = ""
                 };
+
+                SqlParameter[] spParameters = new SqlParameter[]
+                {
+                    new SqlParameter { ParameterName = "@AccountID", Value = account.AccountNumber.ToString() },
+                    new SqlParameter { ParameterName = "@fs_perm_sec_id", Value = permSecurityId }
+                };
+
+                //financials
+                _anchorUnitOfWork.AccountRepository.CallSP("exec dbo.factset_financial_import @AccountID, @fs_perm_sec_id", spParameters);
             }
             catch (Exception e)
             {

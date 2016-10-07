@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     interface ICompanyRepository
     {

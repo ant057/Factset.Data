@@ -13,7 +13,6 @@ namespace Factset.Data.App_Start
     using System.Web.Http;
     using WebApiContrib.IoC.Ninject;
     using Domain;
-    using Models;
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();

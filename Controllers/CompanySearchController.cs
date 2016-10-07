@@ -1,5 +1,5 @@
 ﻿using Factset.Data.Domain;
-using Factset.Data.Models;
+using Factset.Data.FactsetModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -92,6 +92,18 @@ namespace Factset.Data.Controllers
                 .ToList().AsQueryable();
 
             return results as IEnumerable<CompanyList>;
+        }
+
+        //api/CompanySearch/SearchCompanyName/?name=Name
+        [Route("SearchCompanyName")]
+        [HttpGet]
+        public IEnumerable<CompanyList> SearchCompanyName(string name = "")
+        {
+            var results = _unitOfWork.CompanyRepository.Query(p => p.ff_co_name.Contains(name))
+                .Take(20)
+                .Select(c => _modelFactory.CreateCompanyList(c));
+
+            return results;
         }
 
     }

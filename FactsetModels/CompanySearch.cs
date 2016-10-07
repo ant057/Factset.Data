@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     public class CompanySearch
     {

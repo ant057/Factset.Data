@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     public interface IGenericRepository<T> where T:class
     {

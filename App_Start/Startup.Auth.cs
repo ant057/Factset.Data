@@ -9,7 +9,7 @@ using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
 using Factset.Data.Providers;
-using Factset.Data.Models;
+using Factset.Data.FactsetModels;
 
 namespace Factset.Data
 {

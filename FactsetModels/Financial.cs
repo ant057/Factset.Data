@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Factset.Data.Models
+namespace Factset.Data.FactsetModels
 {
     public class Financial
     {
